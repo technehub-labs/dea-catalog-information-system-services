@@ -1,0 +1,129 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://technehub-labs.github.io/dea-catalog-information-system-services/schemas/information-system-service.schema.json",
+  "metamodel_source": "https://github.com/technehub-labs/dea-metamodel/blob/main/schemas/entities/information-system-service.json",
+  "metamodel_version": "1.0.0",
+  "title": "InformationSystemService (catalogue instance schema)",
+  "description": "Catalogue-instance projection of the metamodel InformationSystemService entity. The normative field set is defined by the metamodel schema; this file mirrors it and adds only the catalogue-instance layer (governance, provenance, cross-catalogue references). Do not widen a normative enum here to accept a value the metamodel does not define: fix the record instead. A catalogue that diverges from the metamodel is a second source of truth.",
+  "type": "object",
+  "required": ["id", "type", "name", "version", "lifecycle_status"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^dea:information-system-service-[a-z0-9-]+$",
+      "description": "OpenDEAM-local identifier. The metamodel pattern is the general ^[a-z][a-z0-9-]*:[a-z0-9-]+$; this catalogue narrows it to the ISS entity namespace so a record cannot be filed under another entity's identifier form."
+    },
+    "type": {
+      "type": "string",
+      "const": "InformationSystemService"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 200
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 2000
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "lifecycle_status": {
+      "type": "string",
+      "enum": ["proposed", "planned", "active", "deprecated", "retired"],
+      "description": "CR-3R: lifecycle state from the metamodel lifecycle vocabulary."
+    },
+
+    "external_references": {
+      "type": "array",
+      "description": "Identifiers in external systems. Never a substitute for the OpenDEAM id (E004).",
+      "items": {
+        "type": "object",
+        "required": ["system", "identifier"],
+        "properties": {
+          "system": { "type": "string" },
+          "identifier": { "type": "string" }
+        }
+      }
+    },
+
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+
+    "service_contract": {
+      "type": "object",
+      "description": "Catalogue-instance layer. What the service exchanges, expressed as a contract rather than as an implementation.",
+      "required": ["offering", "consumers"],
+      "properties": {
+        "offering": {
+          "type": "string",
+          "description": "The capability, functionality or data the service makes available."
+        },
+        "consumers": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" },
+          "description": "Consumer descriptions or canonical consumer ids."
+        },
+        "contract_status": {
+          "type": "string",
+          "enum": ["draft", "published", "deprecated", "retired"]
+        }
+      }
+    },
+
+    "provided_by": {
+      "type": "array",
+      "description": "Components or services that provide this service (dea:provides). Cross-catalogue targets resolve against vendored target-id snapshots.",
+      "items": { "type": "string" },
+      "pattern": "^dea:(information-system-component|information-system-service)-[a-z0-9-]+$"
+    },
+
+    "exposed_via": {
+      "type": "array",
+      "description": "Integration interfaces through which the contract is operationalised (dea:exposes). Owned by the II catalogue.",
+      "items": { "type": "string" },
+      "pattern": "^dea:integration-interface-[a-z0-9-]+$"
+    },
+
+    "specializes": {
+      "type": "string",
+      "description": "Core or profile specialisation (dea:specializes). For a platform service, dea:entity-platform-service per the D-3 conditional disposition.",
+      "pattern": "^dea:(entity-)?[a-z0-9-]+$"
+    },
+
+    "governance": {
+      "type": "object",
+      "description": "Catalogue-instance layer. Ownership and review state.",
+      "required": ["functional_owner", "steward", "approval_status"],
+      "properties": {
+        "functional_owner": { "type": "string" },
+        "steward": { "type": "string" },
+        "approval_status": {
+          "type": "string",
+          "enum": ["proposed", "under_review", "approved"]
+        },
+        "review_date": { "type": "string" },
+        "source_and_evidence": { "type": "string" }
+      }
+    },
+
+    "metadata": {
+      "type": "object",
+      "description": "Provenance for the record.",
+      "required": ["cr", "created_by", "created_date"],
+      "properties": {
+        "cr": { "type": "string" },
+        "created_by": { "type": "string" },
+        "created_date": { "type": "string" },
+        "last_modified": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}

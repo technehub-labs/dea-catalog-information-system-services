@@ -1,0 +1,39 @@
+name: validate-catalogue
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    name: catalogue
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: "Step 1: YAML and JSON parsing"
+        run: |
+          set -euo pipefail
+          python3 scripts/check_parse.py
+
+      - name: "Step 2: Pointer present and internally consistent"
+        run: |
+          set -euo pipefail
+          python3 scripts/check_pointer.py
+
+      - name: "Step 3: Schema projection present and valid"
+        run: |
+          set -euo pipefail
+          python3 scripts/check_schema_projection.py
+
+      - name: "Step 4: D-004 and D-005 compliance"
+        run: |
+          set -euo pipefail
+          python3 scripts/check_writing_rules.py
+
+      - name: "Step 5: Records directory posture"
+        run: |
+          set -euo pipefail
+          python3 scripts/check_record_posture.py

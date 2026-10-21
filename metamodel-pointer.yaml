@@ -1,0 +1,67 @@
+# Metamodel Pointer :  Information System Service
+# CR-IS-CAT-03A (ISS catalogue foundation). The repository name matches the
+# OpenDEAM allocation exactly, so no repository rename is pending for this
+# entity. See docs/FOUNDATIONS.md section 5 for the cross-entity repository
+# reality reconciliation covering the four IS-family catalogues.
+#
+# Auto-generated from OpenDEAM v0.7.0 (dea-architecture-framework, CR-AR-FMWK-04).
+# Do not edit manually :  allocation changes go through the root model
+# (structural: ADR + minor bump; additive: PR + patch bump).
+metamodel:
+  version: v0.7.0
+  entity_id: dea:entity-information-system-service
+  class_alias: ISS
+  layer: L5
+  building_block: L5-integration
+  status: planned
+  supersedes: null
+  viewer_url: "https://technehub-labs.github.io/metamodel/?entity=ISS"
+  specialization:
+    core_anchor: dea:Service
+    template: "kernel+specialization (CR-MM-PROC-01 / CR-016 precedent)"
+    note: >-
+      dea:InformationSystemService specialises Core dea:Service. OpenDEAM does not
+      allocate Core entities, so the specialisation is recorded in the metamodel
+      canonical source only, not in the OpenDEAM allocation.
+
+catalog:
+  name: Information System Service
+  repo: technehub-labs/dea-catalog-information-system-services
+  legacy_repo: null
+  status: scaffold
+  rename:
+    target: technehub-labs/dea-catalog-information-system-services
+    cr: CR-IS-CAT-03A
+    status: not-required
+    note: >-
+      The repository already carries the allocated canonical name. Unlike ISF and
+      ISC (which remain mid-rename against their allocation), ISS introduces no
+      repository rename debt.
+
+description: |
+  A service provided by an information system or a software platform to a
+  consumer, expressed as a contract about the exchange of capability,
+  functionality or data. Specialises Core dea:Service. The service contract is
+  operationalised through integration interfaces (dea:IntegrationInterface,
+  introduced in dea-metamodel CR-021).
+
+relationships:
+  vocabulary:
+    - dea:specializes
+    - dea:provides
+    - dea:uses
+    - dea:exposes
+  note: >-
+    The canonical relationship vocabulary. Relationship connections are expressed
+    through the registry rather than as inline state on the entity, per metamodel
+    CR-3. The service contract itself is realised through dea:IntegrationInterface,
+    owned by the II catalogue (dea-catalog-information-system-integration-interfaces).
+
+evidence:
+  metamodel_entity: dea-metamodel/schemas/entities/information-system-service.json
+  metamodel_cr: dea-metamodel/change-requests/CR-020-information-system-service.md
+  framework_cr: dea-architecture-framework CR-AR-FMWK-04
+  programme_cr: dea-metamodel CR-017 (Information Systems Domain Semantic Integration)
+  identifier_map: >-
+    dea:entity-information-system-service -> dea:InformationSystemService,
+    class alias ISS, disposition D-3.

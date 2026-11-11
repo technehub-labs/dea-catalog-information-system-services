@@ -1,0 +1,55 @@
+id: dea:information-system-service-iot-device-management-platform-device-connectivity-device-provisioning-attestation
+type: InformationSystemService
+name: Device Provisioning & Attestation Service
+description: 'Vendor-neutral service record of the Device Connectivity sub-system of the IoT Device
+  Management Platform generic system class (Supply Chain & Manufacturing sector). Device Provisioning
+  & Attestation Service is offered as a service contract; the substitutability test (CR-03A 4.1) passes:
+  materially different vendor implementations can fulfil the same contract, so the record is filed here
+  and not as a component. Provider: the Device Connectivity sub-system component of the IoT Device Management
+  Platform (see provided_by). Vendor corroboration is evidence only; at least 3 distinct vendor systems
+  are cited and no vendor product is canonical (per G-12).'
+version: 1.0.0
+lifecycle_status: active
+service_kind: transaction
+consumer_class: internal-application
+interaction_pattern: request-response
+external_references:
+- system: Azure IoT Hub
+  identifier: AIH-DVC-007
+- system: AWS IoT Core
+  identifier: AWI-DVC-007
+- system: PTC ThingWorx
+  identifier: PTC-DVC-007
+tags:
+- service-kind:transaction
+- consumer-class:internal-application
+- interaction-pattern:request-response
+- sector:supply-chain-manufacturing
+- system-class:iot-device-management-platform
+service_contract:
+  offering: 'Aggregated service contract of the Device Connectivity sub-system of a IoT Device Management
+    Platform: Enroll devices via provisioning attestation; Provision device identities in registry;
+    Register things in device registry.'
+  consumers:
+  - Internal applications of the IoT Device Management Platform
+  contract_status: published
+provided_by:
+- dea:information-system-component-iot-device-management-platform-device-connectivity
+exposed_via:
+- dea:integration-interface-iot-device-management-platform-device-connectivity-device-provisioning-attestation
+governance:
+  functional_owner: IS Semantic Architecture programme
+  steward: IS Semantic Architecture programme
+  approval_status: proposed
+  review_date: '2027-11-10'
+  source_and_evidence: 'Metamodel clause: dea-metamodel schemas/entities/information-system-service.json
+    (InformationSystemService, L5-integration). Admitting CR: CR-IS-CAT-03D (population, deterministic
+    per G-10). Vendor evidence (3 distinct vendor systems, evidence only per G-12): Azure IoT Hub (identifier
+    AIH-DVC-007); AWS IoT Core (identifier AWI-DVC-007); PTC ThingWorx (identifier PTC-DVC-007).'
+metadata:
+  cr: CR-IS-CAT-03D
+  created_by: Emmanuel A. Otchere
+  created_date: '2026-11-11'
+  notes: Derived from the CR-IS-CAT-01C-P4 corroborated function population (594 functions) by deterministic
+    service-contract clustering (G-10). Cross-catalogue exposure is declared forward to dea-catalog-integration-interfaces
+    under CR-IS-CAT-03E.

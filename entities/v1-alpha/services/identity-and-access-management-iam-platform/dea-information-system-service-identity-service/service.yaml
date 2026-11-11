@@ -1,0 +1,57 @@
+id: dea:information-system-service-identity-service
+type: InformationSystemService
+name: Identity Service
+description: 'Vendor-neutral identity service record: authentication, federation and token issuance
+  offered as a service contract to internal applications and external customer channels. The substitutability
+  test (CR-03A 4.1) passes: materially different vendor implementations can fulfil the same contract.
+  Provided by the Identity Broker component and the Identity & Access Services sub-system of the Identity
+  and Access Management (IAM) Platform generic class. Vendor corroboration is evidence only; at least
+  3 distinct vendor systems are cited and no vendor product is canonical (per G-12). Resolves the forward
+  reference dea:information-system-service-identity-service declared by CR-IS-CAT-01D in dea-catalog-system-functions.'
+version: 1.0.0
+lifecycle_status: active
+service_kind: authentication
+consumer_class: mixed
+interaction_pattern: request-response
+external_references:
+- system: Microsoft Entra ID
+  identifier: EI-DIP-001
+- system: Okta
+  identifier: OK-DIP-001
+- system: Keycloak
+  identifier: KC-DIP-001
+tags:
+- service-kind:authentication
+- consumer-class:mixed
+- interaction-pattern:request-response
+- sector:identity-security
+- system-class:identity-and-access-management-iam-platform
+service_contract:
+  offering: 'Aggregated service contract of the Identity & Access Services sub-system of a Identity
+    and Access Management (IAM) Platform: Authenticate users via OIDC and OAuth 2.0; Broker authentication
+    to external identity providers; Detect identity protection risk sign-ins; Federate users from LDAP
+    directories; Issue OAuth2/OIDC tokens at token endpoint; Issue and validate access tokens.'
+  consumers:
+  - Internal and external consumers of the Identity and Access Management (IAM) Platform
+  contract_status: published
+provided_by:
+- dea:information-system-component-identity-broker
+- dea:information-system-component-identity-and-access-management-iam-platform-identity-access-services
+exposed_via:
+- dea:integration-interface-identity-service
+governance:
+  functional_owner: IS Semantic Architecture programme
+  steward: IS Semantic Architecture programme
+  approval_status: proposed
+  review_date: '2027-11-10'
+  source_and_evidence: 'Metamodel clause: dea-metamodel schemas/entities/information-system-service.json
+    (InformationSystemService, L5-integration). Admitting CR: CR-IS-CAT-03D (population, deterministic
+    per G-10). Vendor evidence (3 distinct vendor systems, evidence only per G-12): Microsoft Entra
+    ID (identifier EI-DIP-001); Okta (identifier OK-DIP-001); Keycloak (identifier KC-DIP-001).'
+metadata:
+  cr: CR-IS-CAT-03D
+  created_by: Emmanuel A. Otchere
+  created_date: '2026-11-11'
+  notes: Derived from the CR-IS-CAT-01C-P4 corroborated function population (594 functions) by deterministic
+    service-contract clustering (G-10). Cross-catalogue exposure is declared forward to dea-catalog-integration-interfaces
+    under CR-IS-CAT-03E.

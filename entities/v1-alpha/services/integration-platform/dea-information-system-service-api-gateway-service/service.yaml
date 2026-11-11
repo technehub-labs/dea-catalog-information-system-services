@@ -1,0 +1,52 @@
+id: dea:information-system-service-api-gateway-service
+type: InformationSystemService
+name: API Gateway Service
+description: 'Vendor-neutral API gateway service record: publication, protection and observation of
+  APIs offered as a service contract to internal applications and external partner channels. The substitutability
+  test (CR-03A 4.1) passes: materially different vendor implementations can fulfil the same contract.
+  Provided by the API Gateway component of the Integration Platform class. Vendor corroboration is evidence
+  only; at least 3 distinct vendor systems are cited and no vendor product is canonical (per G-12).
+  Resolves the ISC forward reference isc-rel-006 declared by CR-IS-CAT-02D in dea-catalog-application-components.'
+version: 1.0.0
+lifecycle_status: active
+service_kind: integration
+consumer_class: mixed
+interaction_pattern: request-response
+external_references:
+- system: Amazon Web Services
+  identifier: API Gateway
+- system: Microsoft Azure
+  identifier: API Management
+- system: Google Cloud
+  identifier: Apigee
+tags:
+- service-kind:integration
+- consumer-class:mixed
+- interaction-pattern:request-response
+- sector:technology-infrastructure-devops
+- system-class:integration-platform
+service_contract:
+  offering: Publishes, secures, throttles and observes APIs on behalf of backend services.
+  consumers:
+  - Internal applications and external partner channels of the enterprise
+  contract_status: published
+provided_by:
+- dea:information-system-component-api-gateway
+exposed_via:
+- dea:integration-interface-api-gateway-public
+governance:
+  functional_owner: IS Semantic Architecture programme
+  steward: IS Semantic Architecture programme
+  approval_status: proposed
+  review_date: '2027-11-10'
+  source_and_evidence: 'Metamodel clause: dea-metamodel schemas/entities/information-system-service.json
+    (InformationSystemService, L5-integration). Admitting CR: CR-IS-CAT-03D (population; resolves ISC
+    isc-rel-006). Vendor evidence (3 distinct vendor systems, evidence only per G-12): Amazon Web Services
+    (identifier API Gateway); Microsoft Azure (identifier API Management); Google Cloud (identifier
+    Apigee).'
+metadata:
+  cr: CR-IS-CAT-03D
+  created_by: Emmanuel A. Otchere
+  created_date: '2026-11-11'
+  notes: Special admission resolving the ISC forward reference isc-rel-006 (CR-IS-CAT-02D). Cross-catalogue
+    exposure is declared forward to dea-catalog-integration-interfaces under CR-IS-CAT-03E.

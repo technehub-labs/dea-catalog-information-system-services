@@ -1,0 +1,21 @@
+system_class: human-capital-management-hcm-system
+record_count: 18
+service_ids:
+- dea:information-system-service-human-capital-management-hcm-system-human-capital-management-absence-management
+- dea:information-system-service-human-capital-management-hcm-system-human-capital-management-benefits-administration
+- dea:information-system-service-human-capital-management-hcm-system-human-capital-management-compensation-benchmarking
+- dea:information-system-service-human-capital-management-hcm-system-human-capital-management-compensation-package
+- dea:information-system-service-human-capital-management-hcm-system-human-capital-management-employee-records-administration
+- dea:information-system-service-human-capital-management-hcm-system-human-capital-management-onboarding-offboarding-workflow
+- dea:information-system-service-human-capital-management-hcm-system-human-capital-management-organization-position-management
+- dea:information-system-service-human-capital-management-hcm-system-human-capital-management-payroll-calculation
+- dea:information-system-service-human-capital-management-hcm-system-human-capital-management-payroll-costing-interface
+- dea:information-system-service-human-capital-management-hcm-system-human-capital-management-payroll-self-service
+- dea:information-system-service-human-capital-management-hcm-system-human-capital-management-performance-goal-management
+- dea:information-system-service-human-capital-management-hcm-system-human-capital-management-security-group-provisioning
+- dea:information-system-service-human-capital-management-hcm-system-human-capital-management-skills-certification
+- dea:information-system-service-human-capital-management-hcm-system-human-capital-management-statutory-compliance-records
+- dea:information-system-service-human-capital-management-hcm-system-human-capital-management-total-rewards-statement
+- dea:information-system-service-human-capital-management-hcm-system-human-capital-management-worker-hire-business-process
+- dea:information-system-service-human-capital-management-hcm-system-human-capital-management-worker-records-administration
+- dea:information-system-service-human-capital-management-hcm-system-human-capital-management-workforce-analytics

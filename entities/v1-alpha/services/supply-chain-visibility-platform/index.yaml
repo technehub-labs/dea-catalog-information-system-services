@@ -1,0 +1,11 @@
+system_class: supply-chain-visibility-platform
+record_count: 8
+service_ids:
+- dea:information-system-service-supply-chain-visibility-platform-visibility-network-bill-of-lading-automation
+- dea:information-system-service-supply-chain-visibility-platform-visibility-network-carrier-data-normalization
+- dea:information-system-service-supply-chain-visibility-platform-visibility-network-customs-status
+- dea:information-system-service-supply-chain-visibility-platform-visibility-network-eta-sharing
+- dea:information-system-service-supply-chain-visibility-platform-visibility-network-exception-alerting
+- dea:information-system-service-supply-chain-visibility-platform-visibility-network-shipment-delay-prediction
+- dea:information-system-service-supply-chain-visibility-platform-visibility-network-supply-chain-control-tower
+- dea:information-system-service-supply-chain-visibility-platform-visibility-network-track-and-trace-event-ingestion

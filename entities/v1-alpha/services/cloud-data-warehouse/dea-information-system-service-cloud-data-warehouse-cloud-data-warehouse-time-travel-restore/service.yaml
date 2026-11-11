@@ -1,0 +1,54 @@
+id: dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-time-travel-restore
+type: InformationSystemService
+name: Time Travel Restore Service
+description: 'Vendor-neutral service record of the Cloud Data Warehouse sub-system of the Cloud Data
+  Warehouse generic system class (Data & Analytics sector). Time Travel Restore Service is offered as
+  a service contract; the substitutability test (CR-03A 4.1) passes: materially different vendor implementations
+  can fulfil the same contract, so the record is filed here and not as a component. Provider: the Cloud
+  Data Warehouse sub-system component of the Cloud Data Warehouse (see provided_by). Vendor corroboration
+  is evidence only; at least 3 distinct vendor systems are cited and no vendor product is canonical
+  (per G-12).'
+version: 1.0.0
+lifecycle_status: active
+service_kind: data-access
+consumer_class: internal-application
+interaction_pattern: batch
+external_references:
+- system: Snowflake
+  identifier: SN-CDW-006
+- system: Google BigQuery
+  identifier: GCP-CDW-006
+- system: Amazon Redshift
+  identifier: AWS-CDW-006
+tags:
+- service-kind:data-access
+- consumer-class:internal-application
+- interaction-pattern:batch
+- sector:data-analytics
+- system-class:cloud-data-warehouse
+service_contract:
+  offering: 'Aggregated service contract of the Cloud Data Warehouse sub-system of a Cloud Data Warehouse:
+    Restore data via time travel.'
+  consumers:
+  - Internal applications of the Cloud Data Warehouse
+  contract_status: published
+provided_by:
+- dea:information-system-component-cloud-data-warehouse-cloud-data-warehouse
+exposed_via:
+- dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-time-travel-restore
+governance:
+  functional_owner: IS Semantic Architecture programme
+  steward: IS Semantic Architecture programme
+  approval_status: proposed
+  review_date: '2027-11-10'
+  source_and_evidence: 'Metamodel clause: dea-metamodel schemas/entities/information-system-service.json
+    (InformationSystemService, L5-integration). Admitting CR: CR-IS-CAT-03D (population, deterministic
+    per G-10). Vendor evidence (3 distinct vendor systems, evidence only per G-12): Snowflake (identifier
+    SN-CDW-006); Google BigQuery (identifier GCP-CDW-006); Amazon Redshift (identifier AWS-CDW-006).'
+metadata:
+  cr: CR-IS-CAT-03D
+  created_by: Emmanuel A. Otchere
+  created_date: '2026-11-11'
+  notes: Derived from the CR-IS-CAT-01C-P4 corroborated function population (594 functions) by deterministic
+    service-contract clustering (G-10). Cross-catalogue exposure is declared forward to dea-catalog-integration-interfaces
+    under CR-IS-CAT-03E.

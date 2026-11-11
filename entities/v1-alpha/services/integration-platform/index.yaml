@@ -1,0 +1,4 @@
+system_class: integration-platform
+record_count: 1
+service_ids:
+- dea:information-system-service-api-gateway-service

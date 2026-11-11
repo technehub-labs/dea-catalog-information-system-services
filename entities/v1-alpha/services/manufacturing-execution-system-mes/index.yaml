@@ -1,0 +1,15 @@
+system_class: manufacturing-execution-system-mes
+record_count: 12
+service_ids:
+- dea:information-system-service-manufacturing-execution-system-mes-manufacturing-execution-bom-handover
+- dea:information-system-service-manufacturing-execution-system-mes-manufacturing-execution-compliance-label-printing
+- dea:information-system-service-manufacturing-execution-system-mes-manufacturing-execution-dispatch-scheduling
+- dea:information-system-service-manufacturing-execution-system-mes-manufacturing-execution-downtime-tracking
+- dea:information-system-service-manufacturing-execution-system-mes-manufacturing-execution-genealogy-traceability
+- dea:information-system-service-manufacturing-execution-system-mes-manufacturing-execution-nonconformance-capa
+- dea:information-system-service-manufacturing-execution-system-mes-manufacturing-execution-oee-metrics
+- dea:information-system-service-manufacturing-execution-system-mes-manufacturing-execution-operator-instruction
+- dea:information-system-service-manufacturing-execution-system-mes-manufacturing-execution-process-order-recipe
+- dea:information-system-service-manufacturing-execution-system-mes-manufacturing-execution-quality-inspection
+- dea:information-system-service-manufacturing-execution-system-mes-manufacturing-execution-spc-control-chart
+- dea:information-system-service-manufacturing-execution-system-mes-manufacturing-execution-work-order-release

@@ -1,0 +1,11 @@
+system_class: card-payment-network
+record_count: 8
+service_ids:
+- dea:information-system-service-card-payment-network-authorization-clearing-settlement-bin-account-range-resolution
+- dea:information-system-service-card-payment-network-authorization-clearing-settlement-chargeback-representment
+- dea:information-system-service-card-payment-network-authorization-clearing-settlement-clearing-file-exchange
+- dea:information-system-service-card-payment-network-authorization-clearing-settlement-dispute-case-management
+- dea:information-system-service-card-payment-network-authorization-clearing-settlement-interchange-scheme-fee-calculation
+- dea:information-system-service-card-payment-network-authorization-clearing-settlement-network-settlement-obligation
+- dea:information-system-service-card-payment-network-authorization-clearing-settlement-settlement-reconciliation
+- dea:information-system-service-card-payment-network-authorization-clearing-settlement-transaction-authorization

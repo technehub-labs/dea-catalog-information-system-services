@@ -1,0 +1,55 @@
+id: dea:information-system-service-policy-administration-system-policy-origination-administration-renewal
+type: InformationSystemService
+name: Renewal Service
+description: 'Vendor-neutral service record of the Policy Origination & Administration sub-system of
+  the Policy Administration System generic system class (Financial Services sector). Renewal Service
+  is offered as a service contract; the substitutability test (CR-03A 4.1) passes: materially different
+  vendor implementations can fulfil the same contract, so the record is filed here and not as a component.
+  Provider: the Policy Origination & Administration sub-system component of the Policy Administration
+  System (see provided_by). Vendor corroboration is evidence only; at least 3 distinct vendor systems
+  are cited and no vendor product is canonical (per G-12).'
+version: 1.0.0
+lifecycle_status: active
+service_kind: transaction
+consumer_class: external-customer
+interaction_pattern: batch
+external_references:
+- system: Guidewire (PolicyCenter, ClaimCenter)
+  identifier: GW-PC-005
+- system: Duck Creek Technologies
+  identifier: DCT-PC-005
+- system: Sapiens International
+  identifier: SPN-PC-005
+tags:
+- service-kind:transaction
+- consumer-class:external-customer
+- interaction-pattern:batch
+- sector:financial-services
+- system-class:policy-administration-system
+service_contract:
+  offering: 'Aggregated service contract of the Policy Origination & Administration sub-system of a
+    Policy Administration System: Generate renewal offers with repricing.'
+  consumers:
+  - External customers served by the Policy Administration System
+  contract_status: published
+provided_by:
+- dea:information-system-component-policy-administration-system-policy-origination-administration
+exposed_via:
+- dea:integration-interface-policy-administration-system-policy-origination-administration-renewal
+governance:
+  functional_owner: IS Semantic Architecture programme
+  steward: IS Semantic Architecture programme
+  approval_status: proposed
+  review_date: '2027-11-10'
+  source_and_evidence: 'Metamodel clause: dea-metamodel schemas/entities/information-system-service.json
+    (InformationSystemService, L5-integration). Admitting CR: CR-IS-CAT-03D (population, deterministic
+    per G-10). Vendor evidence (3 distinct vendor systems, evidence only per G-12): Guidewire (PolicyCenter,
+    ClaimCenter) (identifier GW-PC-005); Duck Creek Technologies (identifier DCT-PC-005); Sapiens International
+    (identifier SPN-PC-005).'
+metadata:
+  cr: CR-IS-CAT-03D
+  created_by: Emmanuel A. Otchere
+  created_date: '2026-11-11'
+  notes: Derived from the CR-IS-CAT-01C-P4 corroborated function population (594 functions) by deterministic
+    service-contract clustering (G-10). Cross-catalogue exposure is declared forward to dea-catalog-integration-interfaces
+    under CR-IS-CAT-03E.

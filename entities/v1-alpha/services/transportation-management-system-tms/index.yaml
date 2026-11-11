@@ -1,0 +1,13 @@
+system_class: transportation-management-system-tms
+record_count: 10
+service_ids:
+- dea:information-system-service-transportation-management-system-tms-transportation-freight-carrier-master-rate
+- dea:information-system-service-transportation-management-system-tms-transportation-freight-carrier-performance
+- dea:information-system-service-transportation-management-system-tms-transportation-freight-dangerous-goods-compliance
+- dea:information-system-service-transportation-management-system-tms-transportation-freight-delivery-appointment
+- dea:information-system-service-transportation-management-system-tms-transportation-freight-freight-charge-calculation
+- dea:information-system-service-transportation-management-system-tms-transportation-freight-freight-order
+- dea:information-system-service-transportation-management-system-tms-transportation-freight-freight-settlement
+- dea:information-system-service-transportation-management-system-tms-transportation-freight-load-tender
+- dea:information-system-service-transportation-management-system-tms-transportation-freight-shipment-tracking
+- dea:information-system-service-transportation-management-system-tms-transportation-freight-transport-optimization

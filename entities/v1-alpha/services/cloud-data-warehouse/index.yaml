@@ -1,0 +1,13 @@
+system_class: cloud-data-warehouse
+record_count: 10
+service_ids:
+- dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-bulk-data-loading
+- dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-data-share-publication
+- dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-elastic-query-execution
+- dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-query-result-cache
+- dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-role-based-access-grant
+- dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-secure-view-masking-policy
+- dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-table-maintenance
+- dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-task-stream-pipeline-scheduling
+- dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-time-travel-restore
+- dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-warehouse-usage-metering

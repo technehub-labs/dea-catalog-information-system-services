@@ -1,0 +1,55 @@
+id: dea:information-system-service-core-banking-system-customer-deposit-accounts-interest-accrual-capitalization
+type: InformationSystemService
+name: Interest Accrual & Capitalization Service
+description: 'Vendor-neutral service record of the Customer & Deposit Accounts sub-system of the Core
+  Banking System generic system class (Financial Services sector). Interest Accrual & Capitalization
+  Service is offered as a service contract; the substitutability test (CR-03A 4.1) passes: materially
+  different vendor implementations can fulfil the same contract, so the record is filed here and not
+  as a component. Provider: the Customer & Deposit Accounts sub-system component of the Core Banking
+  System (see provided_by). Vendor corroboration is evidence only; at least 3 distinct vendor systems
+  are cited and no vendor product is canonical (per G-12).'
+version: 1.0.0
+lifecycle_status: active
+service_kind: transaction
+consumer_class: internal-application
+interaction_pattern: batch
+external_references:
+- system: Temenos Transact (T24 Core Banking)
+  identifier: TT-CDA-005
+- system: Finastra Universal Banking
+  identifier: FNS-CDA-005
+- system: FIS Core Banking
+  identifier: FIS-CDA-005
+tags:
+- service-kind:transaction
+- consumer-class:internal-application
+- interaction-pattern:batch
+- sector:financial-services
+- system-class:core-banking-system
+service_contract:
+  offering: 'Aggregated service contract of the Customer & Deposit Accounts sub-system of a Core Banking
+    System: Accrue and capitalize interest to accounts.'
+  consumers:
+  - Internal applications of the Core Banking System
+  contract_status: published
+provided_by:
+- dea:information-system-component-core-banking-system-customer-deposit-accounts
+exposed_via:
+- dea:integration-interface-core-banking-system-customer-deposit-accounts-interest-accrual-capitalization
+governance:
+  functional_owner: IS Semantic Architecture programme
+  steward: IS Semantic Architecture programme
+  approval_status: proposed
+  review_date: '2027-11-10'
+  source_and_evidence: 'Metamodel clause: dea-metamodel schemas/entities/information-system-service.json
+    (InformationSystemService, L5-integration). Admitting CR: CR-IS-CAT-03D (population, deterministic
+    per G-10). Vendor evidence (3 distinct vendor systems, evidence only per G-12): Temenos Transact
+    (T24 Core Banking) (identifier TT-CDA-005); Finastra Universal Banking (identifier FNS-CDA-005);
+    FIS Core Banking (identifier FIS-CDA-005).'
+metadata:
+  cr: CR-IS-CAT-03D
+  created_by: Emmanuel A. Otchere
+  created_date: '2026-11-11'
+  notes: Derived from the CR-IS-CAT-01C-P4 corroborated function population (594 functions) by deterministic
+    service-contract clustering (G-10). Cross-catalogue exposure is declared forward to dea-catalog-integration-interfaces
+    under CR-IS-CAT-03E.

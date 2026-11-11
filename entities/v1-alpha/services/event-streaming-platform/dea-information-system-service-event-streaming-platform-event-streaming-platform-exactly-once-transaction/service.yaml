@@ -1,0 +1,54 @@
+id: dea:information-system-service-event-streaming-platform-event-streaming-platform-exactly-once-transaction
+type: InformationSystemService
+name: Exactly-Once Transaction Service
+description: 'Vendor-neutral service record of the Event Streaming Platform sub-system of the Event
+  Streaming Platform generic system class (Data & Analytics sector). Exactly-Once Transaction Service
+  is offered as a service contract; the substitutability test (CR-03A 4.1) passes: materially different
+  vendor implementations can fulfil the same contract, so the record is filed here and not as a component.
+  Provider: the Event Streaming Platform sub-system component of the Event Streaming Platform (see provided_by).
+  Vendor corroboration is evidence only; at least 3 distinct vendor systems are cited and no vendor
+  product is canonical (per G-12).'
+version: 1.0.0
+lifecycle_status: active
+service_kind: transaction
+consumer_class: internal-machine
+interaction_pattern: request-response
+external_references:
+- system: Apache Kafka
+  identifier: KF-ESP-009
+- system: Confluent Platform
+  identifier: CNF-ESP-009
+- system: Amazon MSK
+  identifier: AWS-ESP-009
+tags:
+- service-kind:transaction
+- consumer-class:internal-machine
+- interaction-pattern:request-response
+- sector:data-analytics
+- system-class:event-streaming-platform
+service_contract:
+  offering: 'Aggregated service contract of the Event Streaming Platform sub-system of a Event Streaming
+    Platform: Commit exactly-once transactional state.'
+  consumers:
+  - Internal machines and integrations of the Event Streaming Platform
+  contract_status: published
+provided_by:
+- dea:information-system-component-event-streaming-platform-event-streaming-platform
+exposed_via:
+- dea:integration-interface-event-streaming-platform-event-streaming-platform-exactly-once-transaction
+governance:
+  functional_owner: IS Semantic Architecture programme
+  steward: IS Semantic Architecture programme
+  approval_status: proposed
+  review_date: '2027-11-10'
+  source_and_evidence: 'Metamodel clause: dea-metamodel schemas/entities/information-system-service.json
+    (InformationSystemService, L5-integration). Admitting CR: CR-IS-CAT-03D (population, deterministic
+    per G-10). Vendor evidence (3 distinct vendor systems, evidence only per G-12): Apache Kafka (identifier
+    KF-ESP-009); Confluent Platform (identifier CNF-ESP-009); Amazon MSK (identifier AWS-ESP-009).'
+metadata:
+  cr: CR-IS-CAT-03D
+  created_by: Emmanuel A. Otchere
+  created_date: '2026-11-11'
+  notes: Derived from the CR-IS-CAT-01C-P4 corroborated function population (594 functions) by deterministic
+    service-contract clustering (G-10). Cross-catalogue exposure is declared forward to dea-catalog-integration-interfaces
+    under CR-IS-CAT-03E.

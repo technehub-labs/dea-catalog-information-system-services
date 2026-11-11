@@ -1,0 +1,54 @@
+id: dea:information-system-service-identity-and-access-management-iam-platform-identity-access-services-identity-governance-reporting
+type: InformationSystemService
+name: Identity Governance Reporting Service
+description: 'Vendor-neutral service record of the Identity & Access Services sub-system of the Identity
+  and Access Management (IAM) Platform generic system class (Identity & Security sector). Identity Governance
+  Reporting Service is offered as a service contract; the substitutability test (CR-03A 4.1) passes:
+  materially different vendor implementations can fulfil the same contract, so the record is filed here
+  and not as a component. Provider: the Identity & Access Services sub-system component of the Identity
+  and Access Management (IAM) Platform (see provided_by). Vendor corroboration is evidence only; at
+  least 3 distinct vendor systems are cited and no vendor product is canonical (per G-12).'
+version: 1.0.0
+lifecycle_status: active
+service_kind: analytics
+consumer_class: internal-analyst
+interaction_pattern: batch
+external_references:
+- system: Microsoft Entra ID
+  identifier: EI-DIP-005
+- system: Okta
+  identifier: OK-DIP-005
+- system: Keycloak
+  identifier: KC-DIP-005
+tags:
+- service-kind:analytics
+- consumer-class:internal-analyst
+- interaction-pattern:batch
+- sector:identity-security
+- system-class:identity-and-access-management-iam-platform
+service_contract:
+  offering: 'Service contract of the Identity & Access Services sub-system of a Identity and Access
+    Management (IAM) Platform: Reports on identity risk, entitlements and access hygiene.'
+  consumers:
+  - Internal analysts across the Identity & Security organization
+  contract_status: published
+provided_by:
+- dea:information-system-component-identity-and-access-management-iam-platform-identity-access-services
+exposed_via:
+- dea:integration-interface-identity-and-access-management-iam-platform-identity-access-services-identity-governance-reporting
+governance:
+  functional_owner: IS Semantic Architecture programme
+  steward: IS Semantic Architecture programme
+  approval_status: proposed
+  review_date: '2027-11-10'
+  source_and_evidence: 'Metamodel clause: dea-metamodel schemas/entities/information-system-service.json
+    (InformationSystemService, L5-integration). Admitting CR: CR-IS-CAT-03D (population, deterministic
+    per G-10). Vendor evidence (3 distinct vendor systems, evidence only per G-12): Microsoft Entra
+    ID (identifier EI-DIP-005); Okta (identifier OK-DIP-005); Keycloak (identifier KC-DIP-005).'
+metadata:
+  cr: CR-IS-CAT-03D
+  created_by: Emmanuel A. Otchere
+  created_date: '2026-11-11'
+  notes: Derived from the CR-IS-CAT-01C-P4 corroborated function population (594 functions) by deterministic
+    service-contract clustering (G-10). Cross-catalogue exposure is declared forward to dea-catalog-integration-interfaces
+    under CR-IS-CAT-03E.

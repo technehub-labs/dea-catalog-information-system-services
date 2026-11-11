@@ -1,0 +1,13 @@
+system_class: issue-tracking-platform
+record_count: 10
+service_ids:
+- dea:information-system-service-issue-tracking-platform-issue-tracking-planning-automation-rule
+- dea:information-system-service-issue-tracking-platform-issue-tracking-planning-board-sprint-planning
+- dea:information-system-service-issue-tracking-platform-issue-tracking-planning-cross-issue-link
+- dea:information-system-service-issue-tracking-platform-issue-tracking-planning-issue-creation
+- dea:information-system-service-issue-tracking-platform-issue-tracking-planning-permission-scheme
+- dea:information-system-service-issue-tracking-platform-issue-tracking-planning-project-template
+- dea:information-system-service-issue-tracking-platform-issue-tracking-planning-roadmap
+- dea:information-system-service-issue-tracking-platform-issue-tracking-planning-saved-search-index
+- dea:information-system-service-issue-tracking-platform-issue-tracking-planning-webhook-event
+- dea:information-system-service-issue-tracking-platform-issue-tracking-planning-workflow-transition

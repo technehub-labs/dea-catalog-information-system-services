@@ -28,7 +28,7 @@ catalog:
   name: Information System Service
   repo: technehub-labs/dea-catalog-information-system-services
   legacy_repo: null
-  status: scaffold
+  status: populated
   rename:
     target: technehub-labs/dea-catalog-information-system-services
     cr: CR-IS-CAT-03A

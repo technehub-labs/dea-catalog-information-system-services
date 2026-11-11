@@ -1,0 +1,54 @@
+id: dea:information-system-service-telecom-operations-support-system-oss-service-provisioning-activation-bulk-provisioning
+type: InformationSystemService
+name: Bulk Provisioning Service
+description: 'Vendor-neutral service record of the Service Provisioning & Activation sub-system of the
+  Telecom Operations Support System (OSS) generic system class (Telecommunications sector). Bulk Provisioning
+  Service is offered as a service contract; the substitutability test (CR-03A 4.1) passes: materially
+  different vendor implementations can fulfil the same contract, so the record is filed here and not
+  as a component. Provider: the Service Provisioning & Activation sub-system component of the Telecom
+  Operations Support System (OSS) (see provided_by). Vendor corroboration is evidence only; at least
+  3 distinct vendor systems are cited and no vendor product is canonical (per G-12).'
+version: 1.0.0
+lifecycle_status: active
+service_kind: transaction
+consumer_class: internal-machine
+interaction_pattern: batch
+external_references:
+- system: Ericsson OSS & Network Management
+  identifier: ERO-PA-002
+- system: Nokia
+  identifier: NOK-PA-002
+- system: Netcracker
+  identifier: NCK-PA-002
+tags:
+- service-kind:transaction
+- consumer-class:internal-machine
+- interaction-pattern:batch
+- sector:telecommunications
+- system-class:telecom-operations-support-system-oss
+service_contract:
+  offering: 'Service contract of the Service Provisioning & Activation sub-system of a Telecom Operations
+    Support System (OSS): Provisions parameter changes across element fleets.'
+  consumers:
+  - Internal machines and integrations of the Telecom Operations Support System (OSS)
+  contract_status: published
+provided_by:
+- dea:information-system-component-telecom-operations-support-system-oss-service-provisioning-activation
+exposed_via:
+- dea:integration-interface-telecom-operations-support-system-oss-service-provisioning-activation-bulk-provisioning
+governance:
+  functional_owner: IS Semantic Architecture programme
+  steward: IS Semantic Architecture programme
+  approval_status: proposed
+  review_date: '2027-11-10'
+  source_and_evidence: 'Metamodel clause: dea-metamodel schemas/entities/information-system-service.json
+    (InformationSystemService, L5-integration). Admitting CR: CR-IS-CAT-03D (population, deterministic
+    per G-10). Vendor evidence (3 distinct vendor systems, evidence only per G-12): Ericsson OSS & Network
+    Management (identifier ERO-PA-002); Nokia (identifier NOK-PA-002); Netcracker (identifier NCK-PA-002).'
+metadata:
+  cr: CR-IS-CAT-03D
+  created_by: Emmanuel A. Otchere
+  created_date: '2026-11-11'
+  notes: Derived from the CR-IS-CAT-01C-P4 corroborated function population (594 functions) by deterministic
+    service-contract clustering (G-10). Cross-catalogue exposure is declared forward to dea-catalog-integration-interfaces
+    under CR-IS-CAT-03E.

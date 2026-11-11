@@ -1,0 +1,17 @@
+system_class: warehouse-management-system-wms
+record_count: 14
+service_ids:
+- dea:information-system-service-warehouse-management-system-wms-warehouse-operations-cross-dock
+- dea:information-system-service-warehouse-management-system-wms-warehouse-operations-cycle-counting
+- dea:information-system-service-warehouse-management-system-wms-warehouse-operations-dock-scheduling
+- dea:information-system-service-warehouse-management-system-wms-warehouse-operations-inbound-receiving
+- dea:information-system-service-warehouse-management-system-wms-warehouse-operations-labor-standards
+- dea:information-system-service-warehouse-management-system-wms-warehouse-operations-outbound-manifest
+- dea:information-system-service-warehouse-management-system-wms-warehouse-operations-pack-cartonization
+- dea:information-system-service-warehouse-management-system-wms-warehouse-operations-pick-task-generation
+- dea:information-system-service-warehouse-management-system-wms-warehouse-operations-putaway
+- dea:information-system-service-warehouse-management-system-wms-warehouse-operations-replenishment
+- dea:information-system-service-warehouse-management-system-wms-warehouse-operations-returns-authorization
+- dea:information-system-service-warehouse-management-system-wms-warehouse-operations-slotting-optimization
+- dea:information-system-service-warehouse-management-system-wms-warehouse-operations-wave-planning
+- dea:information-system-service-warehouse-management-system-wms-warehouse-operations-yard-management

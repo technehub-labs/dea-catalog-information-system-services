@@ -1,0 +1,20 @@
+system_class: radio-access-network-ran
+record_count: 17
+service_ids:
+- dea:information-system-service-radio-access-network-ran-cell-radio-resource-management-admission-control-policy
+- dea:information-system-service-radio-access-network-ran-cell-radio-resource-management-carrier-aggregation
+- dea:information-system-service-radio-access-network-ran-cell-radio-resource-management-cell-capacity-reporting
+- dea:information-system-service-radio-access-network-ran-cell-radio-resource-management-cell-configuration
+- dea:information-system-service-radio-access-network-ran-cell-radio-resource-management-load-balancing
+- dea:information-system-service-radio-access-network-ran-cell-radio-resource-management-radio-bearer-admission
+- dea:information-system-service-radio-access-network-ran-cell-radio-resource-management-radio-resource-scheduling
+- dea:information-system-service-radio-access-network-ran-handover-mobility-optimization-coverage-kpi
+- dea:information-system-service-radio-access-network-ran-handover-mobility-optimization-handover-execution
+- dea:information-system-service-radio-access-network-ran-handover-mobility-optimization-handover-parameter-optimization
+- dea:information-system-service-radio-access-network-ran-handover-mobility-optimization-mobility-robustness
+- dea:information-system-service-radio-access-network-ran-handover-mobility-optimization-neighbor-relation
+- dea:information-system-service-radio-access-network-ran-self-organizing-network-anomaly-detection
+- dea:information-system-service-radio-access-network-ran-self-organizing-network-cell-self-configuration
+- dea:information-system-service-radio-access-network-ran-self-organizing-network-coverage-capacity-optimization
+- dea:information-system-service-radio-access-network-ran-self-organizing-network-energy-saving
+- dea:information-system-service-radio-access-network-ran-self-organizing-network-interference-mitigation

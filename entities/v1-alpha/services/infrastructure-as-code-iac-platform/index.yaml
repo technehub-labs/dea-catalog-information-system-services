@@ -1,0 +1,11 @@
+system_class: infrastructure-as-code-iac-platform
+record_count: 8
+service_ids:
+- dea:information-system-service-infrastructure-as-code-iac-platform-infrastructure-as-code-apply-reconcile
+- dea:information-system-service-infrastructure-as-code-iac-platform-infrastructure-as-code-drift-detection
+- dea:information-system-service-infrastructure-as-code-iac-platform-infrastructure-as-code-environment-workspace
+- dea:information-system-service-infrastructure-as-code-iac-platform-infrastructure-as-code-module-registry
+- dea:information-system-service-infrastructure-as-code-iac-platform-infrastructure-as-code-plan-preview
+- dea:information-system-service-infrastructure-as-code-iac-platform-infrastructure-as-code-policy-as-code
+- dea:information-system-service-infrastructure-as-code-iac-platform-infrastructure-as-code-remote-state
+- dea:information-system-service-infrastructure-as-code-iac-platform-infrastructure-as-code-secret-injection

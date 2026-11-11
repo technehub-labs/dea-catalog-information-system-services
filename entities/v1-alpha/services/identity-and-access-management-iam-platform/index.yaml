@@ -1,0 +1,19 @@
+system_class: identity-and-access-management-iam-platform
+record_count: 16
+service_ids:
+- dea:information-system-service-identity-and-access-management-iam-platform-identity-access-services-access-review-campaign
+- dea:information-system-service-identity-and-access-management-iam-platform-identity-access-services-api-token-management
+- dea:information-system-service-identity-and-access-management-iam-platform-identity-access-services-application-registration-consent
+- dea:information-system-service-identity-and-access-management-iam-platform-identity-access-services-b2b-guest-invitation
+- dea:information-system-service-identity-and-access-management-iam-platform-identity-access-services-conditional-access-policy
+- dea:information-system-service-identity-and-access-management-iam-platform-identity-access-services-credential-vault
+- dea:information-system-service-identity-and-access-management-iam-platform-identity-access-services-directory-synchronization
+- dea:information-system-service-identity-and-access-management-iam-platform-identity-access-services-entitlement-management
+- dea:information-system-service-identity-and-access-management-iam-platform-identity-access-services-identity-governance-reporting
+- dea:information-system-service-identity-and-access-management-iam-platform-identity-access-services-identity-proofing
+- dea:information-system-service-identity-and-access-management-iam-platform-identity-access-services-joiner-mover-leaver-workflow
+- dea:information-system-service-identity-and-access-management-iam-platform-identity-access-services-multi-factor-authentication
+- dea:information-system-service-identity-and-access-management-iam-platform-identity-access-services-privileged-access-management
+- dea:information-system-service-identity-and-access-management-iam-platform-identity-access-services-saml-sso-assertion
+- dea:information-system-service-identity-and-access-management-iam-platform-identity-access-services-session-management
+- dea:information-system-service-identity-service

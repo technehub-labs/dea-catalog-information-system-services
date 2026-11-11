@@ -1,0 +1,55 @@
+id: dea:information-system-service-container-orchestration-platform-cluster-control-plane-workloads-rolling-deployment
+type: InformationSystemService
+name: Rolling Deployment Service
+description: 'Vendor-neutral service record of the Cluster Control Plane & Workloads sub-system of the
+  Container Orchestration Platform generic system class (Technology Infrastructure & DevOps sector).
+  Rolling Deployment Service is offered as a service contract; the substitutability test (CR-03A 4.1)
+  passes: materially different vendor implementations can fulfil the same contract, so the record is
+  filed here and not as a component. Provider: the Cluster Control Plane & Workloads sub-system component
+  of the Container Orchestration Platform (see provided_by). Vendor corroboration is evidence only;
+  at least 3 distinct vendor systems are cited and no vendor product is canonical (per G-12).'
+version: 1.0.0
+lifecycle_status: active
+service_kind: platform-runtime
+consumer_class: internal-application
+interaction_pattern: request-response
+external_references:
+- system: Kubernetes
+  identifier: K8-CCP-007
+- system: Red Hat OpenShift
+  identifier: RHT-CCP-007
+- system: VMware Tanzu
+  identifier: VMW-CCP-007
+tags:
+- service-kind:platform-runtime
+- consumer-class:internal-application
+- interaction-pattern:request-response
+- sector:technology-infrastructure-devops
+- system-class:container-orchestration-platform
+service_contract:
+  offering: 'Aggregated service contract of the Cluster Control Plane & Workloads sub-system of a Container
+    Orchestration Platform: Execute liveness and readiness probe checks; Perform rolling update deployment.'
+  consumers:
+  - Internal applications of the Container Orchestration Platform
+  contract_status: published
+provided_by:
+- dea:information-system-component-container-orchestration-platform-cluster-control-plane-workloads
+exposed_via:
+- dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-rolling-deployment
+specializes: dea:entity-platform-service
+governance:
+  functional_owner: IS Semantic Architecture programme
+  steward: IS Semantic Architecture programme
+  approval_status: proposed
+  review_date: '2027-11-10'
+  source_and_evidence: 'Metamodel clause: dea-metamodel schemas/entities/information-system-service.json
+    (InformationSystemService, L5-integration). Admitting CR: CR-IS-CAT-03D (population, deterministic
+    per G-10). Vendor evidence (3 distinct vendor systems, evidence only per G-12): Kubernetes (identifier
+    K8-CCP-007); Red Hat OpenShift (identifier RHT-CCP-007); VMware Tanzu (identifier VMW-CCP-007).'
+metadata:
+  cr: CR-IS-CAT-03D
+  created_by: Emmanuel A. Otchere
+  created_date: '2026-11-11'
+  notes: Derived from the CR-IS-CAT-01C-P4 corroborated function population (594 functions) by deterministic
+    service-contract clustering (G-10). Cross-catalogue exposure is declared forward to dea-catalog-integration-interfaces
+    under CR-IS-CAT-03E.

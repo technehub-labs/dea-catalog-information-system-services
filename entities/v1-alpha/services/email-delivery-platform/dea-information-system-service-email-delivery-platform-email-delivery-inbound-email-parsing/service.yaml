@@ -1,0 +1,54 @@
+id: dea:information-system-service-email-delivery-platform-email-delivery-inbound-email-parsing
+type: InformationSystemService
+name: Inbound Email Parsing Service
+description: 'Vendor-neutral service record of the Email Delivery sub-system of the Email Delivery Platform
+  generic system class (Customer Communications sector). Inbound Email Parsing Service is offered as
+  a service contract; the substitutability test (CR-03A 4.1) passes: materially different vendor implementations
+  can fulfil the same contract, so the record is filed here and not as a component. Provider: the Email
+  Delivery sub-system component of the Email Delivery Platform (see provided_by). Vendor corroboration
+  is evidence only; at least 3 distinct vendor systems are cited and no vendor product is canonical
+  (per G-12).'
+version: 1.0.0
+lifecycle_status: active
+service_kind: integration
+consumer_class: internal-application
+interaction_pattern: request-response
+external_references:
+- system: SendGrid
+  identifier: SG-EML-002
+- system: Mailgun
+  identifier: MLG-EML-002
+- system: Amazon SES
+  identifier: AWS-EML-002
+tags:
+- service-kind:integration
+- consumer-class:internal-application
+- interaction-pattern:request-response
+- sector:customer-communications
+- system-class:email-delivery-platform
+service_contract:
+  offering: 'Service contract of the Email Delivery sub-system of a Email Delivery Platform: Parses
+    inbound replies and forwards into structured data.'
+  consumers:
+  - Internal applications of the Email Delivery Platform
+  contract_status: published
+provided_by:
+- dea:information-system-component-email-delivery-platform-email-delivery
+exposed_via:
+- dea:integration-interface-email-delivery-platform-email-delivery-inbound-email-parsing
+governance:
+  functional_owner: IS Semantic Architecture programme
+  steward: IS Semantic Architecture programme
+  approval_status: proposed
+  review_date: '2027-11-10'
+  source_and_evidence: 'Metamodel clause: dea-metamodel schemas/entities/information-system-service.json
+    (InformationSystemService, L5-integration). Admitting CR: CR-IS-CAT-03D (population, deterministic
+    per G-10). Vendor evidence (3 distinct vendor systems, evidence only per G-12): SendGrid (identifier
+    SG-EML-002); Mailgun (identifier MLG-EML-002); Amazon SES (identifier AWS-EML-002).'
+metadata:
+  cr: CR-IS-CAT-03D
+  created_by: Emmanuel A. Otchere
+  created_date: '2026-11-11'
+  notes: Derived from the CR-IS-CAT-01C-P4 corroborated function population (594 functions) by deterministic
+    service-contract clustering (G-10). Cross-catalogue exposure is declared forward to dea-catalog-integration-interfaces
+    under CR-IS-CAT-03E.

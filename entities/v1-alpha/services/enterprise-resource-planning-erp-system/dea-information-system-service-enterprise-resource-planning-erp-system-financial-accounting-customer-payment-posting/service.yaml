@@ -1,0 +1,55 @@
+id: dea:information-system-service-enterprise-resource-planning-erp-system-financial-accounting-customer-payment-posting
+type: InformationSystemService
+name: Customer Payment Posting Service
+description: 'Vendor-neutral service record of the Financial Accounting sub-system of the Enterprise
+  Resource Planning (ERP) System generic system class (Enterprise Applications sector). Customer Payment
+  Posting Service is offered as a service contract; the substitutability test (CR-03A 4.1) passes: materially
+  different vendor implementations can fulfil the same contract, so the record is filed here and not
+  as a component. Provider: the Financial Accounting sub-system component of the Enterprise Resource
+  Planning (ERP) System (see provided_by). Vendor corroboration is evidence only; at least 3 distinct
+  vendor systems are cited and no vendor product is canonical (per G-12).'
+version: 1.0.0
+lifecycle_status: active
+service_kind: transaction
+consumer_class: internal-application
+interaction_pattern: request-response
+external_references:
+- system: SAP S/4HANA
+  identifier: S4-FI-004
+- system: Microsoft Dynamics 365 (Finance & Operations, Customer Engagement)
+  identifier: D3-FI-004
+- system: Oracle Fusion Cloud Applications (Financials, HCM, SCM)
+  identifier: OFU-FI-004
+tags:
+- service-kind:transaction
+- consumer-class:internal-application
+- interaction-pattern:request-response
+- sector:enterprise-applications
+- system-class:enterprise-resource-planning-erp-system
+service_contract:
+  offering: 'Aggregated service contract of the Financial Accounting sub-system of a Enterprise Resource
+    Planning (ERP) System: Post incoming customer payments; Run accounts receivable aging analysis.'
+  consumers:
+  - Internal applications of the Enterprise Resource Planning (ERP) System
+  contract_status: published
+provided_by:
+- dea:information-system-component-enterprise-resource-planning-erp-system-financial-accounting
+exposed_via:
+- dea:integration-interface-enterprise-resource-planning-erp-system-financial-accounting-customer-payment-posting
+governance:
+  functional_owner: IS Semantic Architecture programme
+  steward: IS Semantic Architecture programme
+  approval_status: proposed
+  review_date: '2027-11-10'
+  source_and_evidence: 'Metamodel clause: dea-metamodel schemas/entities/information-system-service.json
+    (InformationSystemService, L5-integration). Admitting CR: CR-IS-CAT-03D (population, deterministic
+    per G-10). Vendor evidence (3 distinct vendor systems, evidence only per G-12): SAP S/4HANA (identifier
+    S4-FI-004); Microsoft Dynamics 365 (Finance & Operations, Customer Engagement) (identifier D3-FI-004);
+    Oracle Fusion Cloud Applications (Financials, HCM, SCM) (identifier OFU-FI-004).'
+metadata:
+  cr: CR-IS-CAT-03D
+  created_by: Emmanuel A. Otchere
+  created_date: '2026-11-11'
+  notes: Derived from the CR-IS-CAT-01C-P4 corroborated function population (594 functions) by deterministic
+    service-contract clustering (G-10). Cross-catalogue exposure is declared forward to dea-catalog-integration-interfaces
+    under CR-IS-CAT-03E.

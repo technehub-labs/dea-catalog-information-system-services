@@ -1,0 +1,54 @@
+id: dea:information-system-service-issue-tracking-platform-issue-tracking-planning-webhook-event
+type: InformationSystemService
+name: Webhook Event Service
+description: 'Vendor-neutral service record of the Issue Tracking & Planning sub-system of the Issue
+  Tracking Platform generic system class (Service Management sector). Webhook Event Service is offered
+  as a service contract; the substitutability test (CR-03A 4.1) passes: materially different vendor
+  implementations can fulfil the same contract, so the record is filed here and not as a component.
+  Provider: the Issue Tracking & Planning sub-system component of the Issue Tracking Platform (see provided_by).
+  Vendor corroboration is evidence only; at least 3 distinct vendor systems are cited and no vendor
+  product is canonical (per G-12).'
+version: 1.0.0
+lifecycle_status: active
+service_kind: integration
+consumer_class: internal-machine
+interaction_pattern: event-push
+external_references:
+- system: Atlassian Jira
+  identifier: JR-ITP-008
+- system: Microsoft Azure Boards
+  identifier: AZB-ITP-008
+- system: GitLab Issues
+  identifier: GLB-ITP-008
+tags:
+- service-kind:integration
+- consumer-class:internal-machine
+- interaction-pattern:event-push
+- sector:service-management
+- system-class:issue-tracking-platform
+service_contract:
+  offering: 'Aggregated service contract of the Issue Tracking & Planning sub-system of a Issue Tracking
+    Platform: Emit webhook events to listeners.'
+  consumers:
+  - Internal machines and integrations of the Issue Tracking Platform
+  contract_status: published
+provided_by:
+- dea:information-system-component-issue-tracking-platform-issue-tracking-planning
+exposed_via:
+- dea:integration-interface-issue-tracking-platform-issue-tracking-planning-webhook-event
+governance:
+  functional_owner: IS Semantic Architecture programme
+  steward: IS Semantic Architecture programme
+  approval_status: proposed
+  review_date: '2027-11-10'
+  source_and_evidence: 'Metamodel clause: dea-metamodel schemas/entities/information-system-service.json
+    (InformationSystemService, L5-integration). Admitting CR: CR-IS-CAT-03D (population, deterministic
+    per G-10). Vendor evidence (3 distinct vendor systems, evidence only per G-12): Atlassian Jira (identifier
+    JR-ITP-008); Microsoft Azure Boards (identifier AZB-ITP-008); GitLab Issues (identifier GLB-ITP-008).'
+metadata:
+  cr: CR-IS-CAT-03D
+  created_by: Emmanuel A. Otchere
+  created_date: '2026-11-11'
+  notes: Derived from the CR-IS-CAT-01C-P4 corroborated function population (594 functions) by deterministic
+    service-contract clustering (G-10). Cross-catalogue exposure is declared forward to dea-catalog-integration-interfaces
+    under CR-IS-CAT-03E.

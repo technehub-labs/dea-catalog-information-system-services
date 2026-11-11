@@ -1,0 +1,54 @@
+id: dea:information-system-service-customer-service-ticketing-platform-customer-service-management-sla-policy-enforcement
+type: InformationSystemService
+name: SLA Policy Enforcement Service
+description: 'Vendor-neutral service record of the Customer Service Management sub-system of the Customer
+  Service Ticketing Platform generic system class (Service Management sector). SLA Policy Enforcement
+  Service is offered as a service contract; the substitutability test (CR-03A 4.1) passes: materially
+  different vendor implementations can fulfil the same contract, so the record is filed here and not
+  as a component. Provider: the Customer Service Management sub-system component of the Customer Service
+  Ticketing Platform (see provided_by). Vendor corroboration is evidence only; at least 3 distinct vendor
+  systems are cited and no vendor product is canonical (per G-12).'
+version: 1.0.0
+lifecycle_status: active
+service_kind: authentication
+consumer_class: internal-application
+interaction_pattern: request-response
+external_references:
+- system: Zendesk
+  identifier: ZD-CSD-002
+- system: Freshworks Freshdesk
+  identifier: FRW-CSD-002
+- system: Zoho Desk
+  identifier: ZHD-CSD-002
+tags:
+- service-kind:authentication
+- consumer-class:internal-application
+- interaction-pattern:request-response
+- sector:service-management
+- system-class:customer-service-ticketing-platform
+service_contract:
+  offering: 'Aggregated service contract of the Customer Service Management sub-system of a Customer
+    Service Ticketing Platform: Enforce SLA policies on tickets.'
+  consumers:
+  - Internal applications of the Customer Service Ticketing Platform
+  contract_status: published
+provided_by:
+- dea:information-system-component-customer-service-ticketing-platform-customer-service-management
+exposed_via:
+- dea:integration-interface-customer-service-ticketing-platform-customer-service-management-sla-policy-enforcement
+governance:
+  functional_owner: IS Semantic Architecture programme
+  steward: IS Semantic Architecture programme
+  approval_status: proposed
+  review_date: '2027-11-10'
+  source_and_evidence: 'Metamodel clause: dea-metamodel schemas/entities/information-system-service.json
+    (InformationSystemService, L5-integration). Admitting CR: CR-IS-CAT-03D (population, deterministic
+    per G-10). Vendor evidence (3 distinct vendor systems, evidence only per G-12): Zendesk (identifier
+    ZD-CSD-002); Freshworks Freshdesk (identifier FRW-CSD-002); Zoho Desk (identifier ZHD-CSD-002).'
+metadata:
+  cr: CR-IS-CAT-03D
+  created_by: Emmanuel A. Otchere
+  created_date: '2026-11-11'
+  notes: Derived from the CR-IS-CAT-01C-P4 corroborated function population (594 functions) by deterministic
+    service-contract clustering (G-10). Cross-catalogue exposure is declared forward to dea-catalog-integration-interfaces
+    under CR-IS-CAT-03E.

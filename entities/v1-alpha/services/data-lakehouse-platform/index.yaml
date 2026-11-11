@@ -1,0 +1,13 @@
+system_class: data-lakehouse-platform
+record_count: 10
+service_ids:
+- dea:information-system-service-data-lakehouse-platform-lakehouse-platform-cluster-autoscaling
+- dea:information-system-service-data-lakehouse-platform-lakehouse-platform-data-lineage-capture
+- dea:information-system-service-data-lakehouse-platform-lakehouse-platform-delta-sharing
+- dea:information-system-service-data-lakehouse-platform-lakehouse-platform-model-registry-deployment
+- dea:information-system-service-data-lakehouse-platform-lakehouse-platform-notebook-job-scheduling
+- dea:information-system-service-data-lakehouse-platform-lakehouse-platform-serverless-notebook
+- dea:information-system-service-data-lakehouse-platform-lakehouse-platform-sql-warehouse-query
+- dea:information-system-service-data-lakehouse-platform-lakehouse-platform-structured-streaming
+- dea:information-system-service-data-lakehouse-platform-lakehouse-platform-table-optimization
+- dea:information-system-service-data-lakehouse-platform-lakehouse-platform-unity-catalog-governance

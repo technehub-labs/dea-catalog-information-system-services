@@ -4,7 +4,7 @@
   "metamodel_source": "https://github.com/technehub-labs/dea-metamodel/blob/main/schemas/entities/information-system-service.json",
   "metamodel_version": "1.0.0",
   "title": "InformationSystemService (catalogue instance schema)",
-  "description": "Catalogue-instance projection of the metamodel InformationSystemService entity. The normative field set is defined by the metamodel schema; this file mirrors it and adds only the catalogue-instance layer (governance, provenance, cross-catalogue references). Do not widen a normative enum here to accept a value the metamodel does not define: fix the record instead. A catalogue that diverges from the metamodel is a second source of truth.",
+  "description": "Catalogue-instance projection of the metamodel InformationSystemService entity. The normative field set is defined by the metamodel schema; this file mirrors it and adds only the catalogue-instance layer (classification axes promoted to first-class fields by CR-IS-CAT-03B, governance, provenance, cross-catalogue references). Do not widen a normative enum here to accept a value the metamodel does not define: fix the record instead. A catalogue that diverges from the metamodel is a second source of truth.",
   "type": "object",
   "required": ["id", "type", "name", "version", "lifecycle_status"],
   "additionalProperties": false,
@@ -36,10 +36,24 @@
       "enum": ["proposed", "planned", "active", "deprecated", "retired"],
       "description": "CR-3R: lifecycle state from the metamodel lifecycle vocabulary."
     },
-
+    "service_kind": {
+      "type": "string",
+      "enum": ["authentication", "data-access", "transaction", "notification", "analytics", "integration", "platform-runtime", "other"],
+      "description": "Classification axis 1 (CR-IS-CAT-03B): what kind of contract is offered. Promoted from the service-kind tag to a first-class field when the taxonomy was ratified. The tag remains as a mirror; the taxonomy gate asserts the two agree."
+    },
+    "consumer_class": {
+      "type": "string",
+      "enum": ["internal-application", "internal-analyst", "internal-machine", "external-partner", "external-customer", "mixed"],
+      "description": "Classification axis 2 (CR-IS-CAT-03B): who consumes the service. Promoted from the consumer-class tag; the taxonomy gate asserts tag and field agree."
+    },
+    "interaction_pattern": {
+      "type": "string",
+      "enum": ["request-response", "event-push", "event-subscribe", "streaming", "batch", "mixed"],
+      "description": "Classification axis 3 (CR-IS-CAT-03B): how the exchange is shaped, expressed at the contract level. Promoted from the interaction-pattern tag; the taxonomy gate asserts tag and field agree."
+    },
     "external_references": {
       "type": "array",
-      "description": "Identifiers in external systems. Never a substitute for the OpenDEAM id (E004).",
+      "description": "Identifiers in external systems. Never a substitute for the OpenDEAM id (E004). Vendor systems appear here as corroboration evidence only (G-12); at least 3 distinct vendor systems are cited per record.",
       "items": {
         "type": "object",
         "required": ["system", "identifier"],
@@ -49,12 +63,10 @@
         }
       }
     },
-
     "tags": {
       "type": "array",
       "items": { "type": "string" }
     },
-
     "service_contract": {
       "type": "object",
       "description": "Catalogue-instance layer. What the service exchanges, expressed as a contract rather than as an implementation.",
@@ -72,31 +84,28 @@
         },
         "contract_status": {
           "type": "string",
-          "enum": ["draft", "published", "deprecated", "retired"]
+          "enum": ["draft", "published", "deprecated", "retired"],
+          "description": "Classification axis 4 (contract maturity): how settled the contract is."
         }
       }
     },
-
     "provided_by": {
       "type": "array",
       "description": "Components or services that provide this service (dea:provides). Cross-catalogue targets resolve against vendored target-id snapshots.",
       "items": { "type": "string" },
       "pattern": "^dea:(information-system-component|information-system-service)-[a-z0-9-]+$"
     },
-
     "exposed_via": {
       "type": "array",
       "description": "Integration interfaces through which the contract is operationalised (dea:exposes). Owned by the II catalogue.",
       "items": { "type": "string" },
       "pattern": "^dea:integration-interface-[a-z0-9-]+$"
     },
-
     "specializes": {
       "type": "string",
       "description": "Core or profile specialisation (dea:specializes). For a platform service, dea:entity-platform-service per the D-3 conditional disposition.",
       "pattern": "^dea:(entity-)?[a-z0-9-]+$"
     },
-
     "governance": {
       "type": "object",
       "description": "Catalogue-instance layer. Ownership and review state.",
@@ -112,7 +121,6 @@
         "source_and_evidence": { "type": "string" }
       }
     },
-
     "metadata": {
       "type": "object",
       "description": "Provenance for the record.",

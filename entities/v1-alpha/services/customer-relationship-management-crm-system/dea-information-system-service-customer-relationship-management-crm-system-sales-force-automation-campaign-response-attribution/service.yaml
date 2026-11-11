@@ -1,0 +1,56 @@
+id: dea:information-system-service-customer-relationship-management-crm-system-sales-force-automation-campaign-response-attribution
+type: InformationSystemService
+name: Campaign Response Attribution Service
+description: 'Vendor-neutral service record of the Sales Force Automation sub-system of the Customer
+  Relationship Management (CRM) System generic system class (Enterprise Applications sector). Campaign
+  Response Attribution Service is offered as a service contract; the substitutability test (CR-03A 4.1)
+  passes: materially different vendor implementations can fulfil the same contract, so the record is
+  filed here and not as a component. Provider: the Sales Force Automation sub-system component of the
+  Customer Relationship Management (CRM) System (see provided_by). Vendor corroboration is evidence
+  only; at least 3 distinct vendor systems are cited and no vendor product is canonical (per G-12).'
+version: 1.0.0
+lifecycle_status: active
+service_kind: analytics
+consumer_class: internal-analyst
+interaction_pattern: batch
+external_references:
+- system: Salesforce Platform (Sales, Service & Platform Clouds)
+  identifier: SF-SCL-009
+- system: Microsoft Dynamics 365 (Finance & Operations, Customer Engagement)
+  identifier: D3-SCL-009
+- system: Oracle Fusion Cloud Applications (Financials, HCM, SCM)
+  identifier: OFU-SCL-009
+tags:
+- service-kind:analytics
+- consumer-class:internal-analyst
+- interaction-pattern:batch
+- sector:enterprise-applications
+- system-class:customer-relationship-management-crm-system
+service_contract:
+  offering: 'Aggregated service contract of the Sales Force Automation sub-system of a Customer Relationship
+    Management (CRM) System: Capture campaign responses and attribution.'
+  consumers:
+  - Internal analysts across the Enterprise Applications organization
+  contract_status: published
+provided_by:
+- dea:information-system-component-customer-relationship-management-crm-system-sales-force-automation
+exposed_via:
+- dea:integration-interface-customer-relationship-management-crm-system-sales-force-automation-campaign-response-attribution
+governance:
+  functional_owner: IS Semantic Architecture programme
+  steward: IS Semantic Architecture programme
+  approval_status: proposed
+  review_date: '2027-11-10'
+  source_and_evidence: 'Metamodel clause: dea-metamodel schemas/entities/information-system-service.json
+    (InformationSystemService, L5-integration). Admitting CR: CR-IS-CAT-03D (population, deterministic
+    per G-10). Vendor evidence (3 distinct vendor systems, evidence only per G-12): Salesforce Platform
+    (Sales, Service & Platform Clouds) (identifier SF-SCL-009); Microsoft Dynamics 365 (Finance & Operations,
+    Customer Engagement) (identifier D3-SCL-009); Oracle Fusion Cloud Applications (Financials, HCM,
+    SCM) (identifier OFU-SCL-009).'
+metadata:
+  cr: CR-IS-CAT-03D
+  created_by: Emmanuel A. Otchere
+  created_date: '2026-11-11'
+  notes: Derived from the CR-IS-CAT-01C-P4 corroborated function population (594 functions) by deterministic
+    service-contract clustering (G-10). Cross-catalogue exposure is declared forward to dea-catalog-integration-interfaces
+    under CR-IS-CAT-03E.

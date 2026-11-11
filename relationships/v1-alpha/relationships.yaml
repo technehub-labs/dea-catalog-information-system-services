@@ -1,0 +1,869 @@
+# ISS relationship registry (CR-IS-CAT-03E).
+# Connection assertions live here per D8; record fields (provided_by, exposed_via)
+# are cross-catalogue pointers, while this registry carries the typed edges.
+schema: dea.iss.relationship-registry.v1
+cr: CR-IS-CAT-03E
+relationships:
+- id: rel:iss-0001-provides
+  source_id: dea:information-system-component-api-gateway
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-api-gateway-service
+  relationship_description: The API Gateway Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-api-gateway-service; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0002-exposes
+  source_id: dea:information-system-service-api-gateway-service
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-api-gateway-public
+  relationship_description: The API Gateway Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0003-provides
+  source_id: dea:information-system-component-card-payment-network-authorization-clearing-settlement
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-card-payment-network-authorization-clearing-settlement-bin-account-range-resolution
+  relationship_description: The BIN & Account Range Resolution Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-card-payment-network-authorization-clearing-settlement-bin-account-range-resolution; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0004-exposes
+  source_id: dea:information-system-service-card-payment-network-authorization-clearing-settlement-bin-account-range-resolution
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-card-payment-network-authorization-clearing-settlement-bin-account-range-resolution
+  relationship_description: The BIN & Account Range Resolution Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0005-provides
+  source_id: dea:information-system-component-card-payment-network-authorization-clearing-settlement
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-card-payment-network-authorization-clearing-settlement-chargeback-representment
+  relationship_description: The Chargeback & Representment Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-card-payment-network-authorization-clearing-settlement-chargeback-representment; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0006-exposes
+  source_id: dea:information-system-service-card-payment-network-authorization-clearing-settlement-chargeback-representment
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-card-payment-network-authorization-clearing-settlement-chargeback-representment
+  relationship_description: The Chargeback & Representment Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0007-provides
+  source_id: dea:information-system-component-card-payment-network-authorization-clearing-settlement
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-card-payment-network-authorization-clearing-settlement-clearing-file-exchange
+  relationship_description: The Clearing File Exchange Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-card-payment-network-authorization-clearing-settlement-clearing-file-exchange; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0008-exposes
+  source_id: dea:information-system-service-card-payment-network-authorization-clearing-settlement-clearing-file-exchange
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-card-payment-network-authorization-clearing-settlement-clearing-file-exchange
+  relationship_description: The Clearing File Exchange Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0009-provides
+  source_id: dea:information-system-component-card-payment-network-authorization-clearing-settlement
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-card-payment-network-authorization-clearing-settlement-dispute-case-management
+  relationship_description: The Dispute Case Management Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-card-payment-network-authorization-clearing-settlement-dispute-case-management; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0010-exposes
+  source_id: dea:information-system-service-card-payment-network-authorization-clearing-settlement-dispute-case-management
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-card-payment-network-authorization-clearing-settlement-dispute-case-management
+  relationship_description: The Dispute Case Management Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0011-provides
+  source_id: dea:information-system-component-card-payment-network-authorization-clearing-settlement
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-card-payment-network-authorization-clearing-settlement-interchange-scheme-fee-calculation
+  relationship_description: The Interchange & Scheme Fee Calculation Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-card-payment-network-authorization-clearing-settlement-interchange-scheme-fee-calculation; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0012-exposes
+  source_id: dea:information-system-service-card-payment-network-authorization-clearing-settlement-interchange-scheme-fee-calculation
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-card-payment-network-authorization-clearing-settlement-interchange-scheme-fee-calculation
+  relationship_description: The Interchange & Scheme Fee Calculation Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0013-provides
+  source_id: dea:information-system-component-card-payment-network-authorization-clearing-settlement
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-card-payment-network-authorization-clearing-settlement-network-settlement-obligation
+  relationship_description: The Network Settlement Obligation Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-card-payment-network-authorization-clearing-settlement-network-settlement-obligation; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0014-exposes
+  source_id: dea:information-system-service-card-payment-network-authorization-clearing-settlement-network-settlement-obligation
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-card-payment-network-authorization-clearing-settlement-network-settlement-obligation
+  relationship_description: The Network Settlement Obligation Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0015-provides
+  source_id: dea:information-system-component-card-payment-network-authorization-clearing-settlement
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-card-payment-network-authorization-clearing-settlement-settlement-reconciliation
+  relationship_description: The Settlement Reconciliation Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-card-payment-network-authorization-clearing-settlement-settlement-reconciliation; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0016-exposes
+  source_id: dea:information-system-service-card-payment-network-authorization-clearing-settlement-settlement-reconciliation
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-card-payment-network-authorization-clearing-settlement-settlement-reconciliation
+  relationship_description: The Settlement Reconciliation Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0017-provides
+  source_id: dea:information-system-component-card-payment-network-authorization-clearing-settlement
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-card-payment-network-authorization-clearing-settlement-transaction-authorization
+  relationship_description: The Transaction Authorization Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-card-payment-network-authorization-clearing-settlement-transaction-authorization; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0018-exposes
+  source_id: dea:information-system-service-card-payment-network-authorization-clearing-settlement-transaction-authorization
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-card-payment-network-authorization-clearing-settlement-transaction-authorization
+  relationship_description: The Transaction Authorization Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0019-provides
+  source_id: dea:information-system-component-claims-management-system-claims-intake-adjudication
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-adjudication-decision
+  relationship_description: The Claim Adjudication Decision Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-adjudication-decision; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0020-exposes
+  source_id: dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-adjudication-decision
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-claims-management-system-claims-intake-adjudication-claim-adjudication-decision
+  relationship_description: The Claim Adjudication Decision Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0021-provides
+  source_id: dea:information-system-component-claims-management-system-claims-intake-adjudication
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-assignment-routing
+  relationship_description: The Claim Assignment & Routing Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-assignment-routing; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0022-exposes
+  source_id: dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-assignment-routing
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-claims-management-system-claims-intake-adjudication-claim-assignment-routing
+  relationship_description: The Claim Assignment & Routing Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0023-provides
+  source_id: dea:information-system-component-claims-management-system-claims-intake-adjudication
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-closure-coding
+  relationship_description: The Claim Closure & Coding Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-closure-coding; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0024-exposes
+  source_id: dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-closure-coding
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-claims-management-system-claims-intake-adjudication-claim-closure-coding
+  relationship_description: The Claim Closure & Coding Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0025-provides
+  source_id: dea:information-system-component-claims-management-system-claims-intake-adjudication
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-exposure-coverage-evaluation
+  relationship_description: The Claim Exposure & Coverage Evaluation Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-exposure-coverage-evaluation; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0026-exposes
+  source_id: dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-exposure-coverage-evaluation
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-claims-management-system-claims-intake-adjudication-claim-exposure-coverage-evaluation
+  relationship_description: The Claim Exposure & Coverage Evaluation Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0027-provides
+  source_id: dea:information-system-component-claims-management-system-claims-intake-adjudication
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-fraud-detection
+  relationship_description: The Claim Fraud Detection Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-fraud-detection; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0028-exposes
+  source_id: dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-fraud-detection
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-claims-management-system-claims-intake-adjudication-claim-fraud-detection
+  relationship_description: The Claim Fraud Detection Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0029-provides
+  source_id: dea:information-system-component-claims-management-system-claims-intake-adjudication
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-payment-issuance
+  relationship_description: The Claim Payment Issuance Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-payment-issuance; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0030-exposes
+  source_id: dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-payment-issuance
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-claims-management-system-claims-intake-adjudication-claim-payment-issuance
+  relationship_description: The Claim Payment Issuance Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0031-provides
+  source_id: dea:information-system-component-claims-management-system-claims-intake-adjudication
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-reserve-estimation
+  relationship_description: The Claim Reserve Estimation Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-reserve-estimation; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0032-exposes
+  source_id: dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-reserve-estimation
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-claims-management-system-claims-intake-adjudication-claim-reserve-estimation
+  relationship_description: The Claim Reserve Estimation Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0033-provides
+  source_id: dea:information-system-component-claims-management-system-claims-intake-adjudication
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-claims-management-system-claims-intake-adjudication-first-notice-of-loss-intake
+  relationship_description: The First Notice of Loss Intake Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-claims-management-system-claims-intake-adjudication-first-notice-of-loss-intake; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0034-exposes
+  source_id: dea:information-system-service-claims-management-system-claims-intake-adjudication-first-notice-of-loss-intake
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-claims-management-system-claims-intake-adjudication-first-notice-of-loss-intake
+  relationship_description: The First Notice of Loss Intake Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0035-provides
+  source_id: dea:information-system-component-claims-management-system-claims-intake-adjudication
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-claims-management-system-claims-intake-adjudication-subrogation-recovery
+  relationship_description: The Subrogation Recovery Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-claims-management-system-claims-intake-adjudication-subrogation-recovery; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0036-exposes
+  source_id: dea:information-system-service-claims-management-system-claims-intake-adjudication-subrogation-recovery
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-claims-management-system-claims-intake-adjudication-subrogation-recovery
+  relationship_description: The Subrogation Recovery Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0037-provides
+  source_id: dea:information-system-component-cloud-data-warehouse-cloud-data-warehouse
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-bulk-data-loading
+  relationship_description: The Bulk Data Loading Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-bulk-data-loading; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0038-exposes
+  source_id: dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-bulk-data-loading
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-bulk-data-loading
+  relationship_description: The Bulk Data Loading Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0039-provides
+  source_id: dea:information-system-component-cloud-data-warehouse-cloud-data-warehouse
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-data-share-publication
+  relationship_description: The Data Share Publication Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-data-share-publication; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0040-exposes
+  source_id: dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-data-share-publication
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-data-share-publication
+  relationship_description: The Data Share Publication Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0041-provides
+  source_id: dea:information-system-component-cloud-data-warehouse-cloud-data-warehouse
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-elastic-query-execution
+  relationship_description: The Elastic Query Execution Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-elastic-query-execution; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0042-exposes
+  source_id: dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-elastic-query-execution
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-elastic-query-execution
+  relationship_description: The Elastic Query Execution Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0043-provides
+  source_id: dea:information-system-component-cloud-data-warehouse-cloud-data-warehouse
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-query-result-cache
+  relationship_description: The Query Result Cache Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-query-result-cache; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0044-exposes
+  source_id: dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-query-result-cache
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-query-result-cache
+  relationship_description: The Query Result Cache Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0045-provides
+  source_id: dea:information-system-component-cloud-data-warehouse-cloud-data-warehouse
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-role-based-access-grant
+  relationship_description: The Role-Based Access Grant Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-role-based-access-grant; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0046-exposes
+  source_id: dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-role-based-access-grant
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-role-based-access-grant
+  relationship_description: The Role-Based Access Grant Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0047-provides
+  source_id: dea:information-system-component-cloud-data-warehouse-cloud-data-warehouse
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-secure-view-masking-policy
+  relationship_description: The Secure View & Masking Policy Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-secure-view-masking-policy; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0048-exposes
+  source_id: dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-secure-view-masking-policy
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-secure-view-masking-policy
+  relationship_description: The Secure View & Masking Policy Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0049-provides
+  source_id: dea:information-system-component-cloud-data-warehouse-cloud-data-warehouse
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-table-maintenance
+  relationship_description: The Table Maintenance Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-table-maintenance; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0050-exposes
+  source_id: dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-table-maintenance
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-table-maintenance
+  relationship_description: The Table Maintenance Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0051-provides
+  source_id: dea:information-system-component-cloud-data-warehouse-cloud-data-warehouse
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-task-stream-pipeline-scheduling
+  relationship_description: The Task & Stream Pipeline Scheduling Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-task-stream-pipeline-scheduling; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0052-exposes
+  source_id: dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-task-stream-pipeline-scheduling
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-task-stream-pipeline-scheduling
+  relationship_description: The Task & Stream Pipeline Scheduling Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0053-provides
+  source_id: dea:information-system-component-cloud-data-warehouse-cloud-data-warehouse
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-time-travel-restore
+  relationship_description: The Time Travel Restore Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-time-travel-restore; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0054-exposes
+  source_id: dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-time-travel-restore
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-time-travel-restore
+  relationship_description: The Time Travel Restore Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0055-provides
+  source_id: dea:information-system-component-cloud-data-warehouse-cloud-data-warehouse
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-warehouse-usage-metering
+  relationship_description: The Warehouse Usage Metering Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-warehouse-usage-metering; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0056-exposes
+  source_id: dea:information-system-service-cloud-data-warehouse-cloud-data-warehouse-warehouse-usage-metering
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-warehouse-usage-metering
+  relationship_description: The Warehouse Usage Metering Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0057-provides
+  source_id: dea:information-system-component-cloud-infrastructure-platform-compute-storage-networking-services
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-block-file-storage-provisioning
+  relationship_description: The Block & File Storage Provisioning Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-block-file-storage-provisioning; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0058-exposes
+  source_id: dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-block-file-storage-provisioning
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-block-file-storage-provisioning
+  relationship_description: The Block & File Storage Provisioning Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0059-provides
+  source_id: dea:information-system-component-cloud-infrastructure-platform-compute-storage-networking-services
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-compute-instance-provisioning
+  relationship_description: The Compute Instance Provisioning Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-compute-instance-provisioning; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0060-exposes
+  source_id: dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-compute-instance-provisioning
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-compute-instance-provisioning
+  relationship_description: The Compute Instance Provisioning Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0061-provides
+  source_id: dea:information-system-component-cloud-infrastructure-platform-compute-storage-networking-services
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-load-balancing-traffic-routing
+  relationship_description: The Load Balancing & Traffic Routing Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-load-balancing-traffic-routing; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0062-exposes
+  source_id: dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-load-balancing-traffic-routing
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-load-balancing-traffic-routing
+  relationship_description: The Load Balancing & Traffic Routing Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0063-provides
+  source_id: dea:information-system-component-cloud-infrastructure-platform-compute-storage-networking-services
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-managed-database-backup-restore
+  relationship_description: The Managed Database Backup & Restore Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-managed-database-backup-restore; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0064-exposes
+  source_id: dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-managed-database-backup-restore
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-managed-database-backup-restore
+  relationship_description: The Managed Database Backup & Restore Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0065-provides
+  source_id: dea:information-system-component-cloud-infrastructure-platform-compute-storage-networking-services
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-managed-dns-resolution
+  relationship_description: The Managed DNS Resolution Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-managed-dns-resolution; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0066-exposes
+  source_id: dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-managed-dns-resolution
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-managed-dns-resolution
+  relationship_description: The Managed DNS Resolution Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0067-provides
+  source_id: dea:information-system-component-cloud-infrastructure-platform-compute-storage-networking-services
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-managed-message-queue
+  relationship_description: The Managed Message Queue Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-managed-message-queue; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0068-exposes
+  source_id: dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-managed-message-queue
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-managed-message-queue
+  relationship_description: The Managed Message Queue Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0069-provides
+  source_id: dea:information-system-component-cloud-infrastructure-platform-compute-storage-networking-services
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-monitoring-alarm-evaluation
+  relationship_description: The Monitoring Alarm Evaluation Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-monitoring-alarm-evaluation; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0070-exposes
+  source_id: dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-monitoring-alarm-evaluation
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-monitoring-alarm-evaluation
+  relationship_description: The Monitoring Alarm Evaluation Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0071-provides
+  source_id: dea:information-system-component-cloud-infrastructure-platform-compute-storage-networking-services
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-network-security-group-enforcement
+  relationship_description: The Network Security Group Enforcement Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-network-security-group-enforcement; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0072-exposes
+  source_id: dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-network-security-group-enforcement
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-network-security-group-enforcement
+  relationship_description: The Network Security Group Enforcement Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0073-provides
+  source_id: dea:information-system-component-cloud-infrastructure-platform-compute-storage-networking-services
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-object-storage-lifecycle
+  relationship_description: The Object Storage Lifecycle Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-object-storage-lifecycle; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0074-exposes
+  source_id: dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-object-storage-lifecycle
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-object-storage-lifecycle
+  relationship_description: The Object Storage Lifecycle Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0075-provides
+  source_id: dea:information-system-component-cloud-infrastructure-platform-compute-storage-networking-services
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-serverless-function-invocation
+  relationship_description: The Serverless Function Invocation Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-serverless-function-invocation; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0076-exposes
+  source_id: dea:information-system-service-cloud-infrastructure-platform-compute-storage-networking-services-serverless-function-invocation
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-serverless-function-invocation
+  relationship_description: The Serverless Function Invocation Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0077-provides
+  source_id: dea:information-system-component-communications-platform-cpaas-programmable-communications
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-communications-platform-cpaas-programmable-communications-campaign-compliance-registration
+  relationship_description: The Campaign Compliance Registration Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-communications-platform-cpaas-programmable-communications-campaign-compliance-registration; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0078-exposes
+  source_id: dea:information-system-service-communications-platform-cpaas-programmable-communications-campaign-compliance-registration
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-communications-platform-cpaas-programmable-communications-campaign-compliance-registration
+  relationship_description: The Campaign Compliance Registration Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0079-provides
+  source_id: dea:information-system-component-communications-platform-cpaas-programmable-communications
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-communications-platform-cpaas-programmable-communications-conversation-api
+  relationship_description: The Conversation API Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-communications-platform-cpaas-programmable-communications-conversation-api; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0080-exposes
+  source_id: dea:information-system-service-communications-platform-cpaas-programmable-communications-conversation-api
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-communications-platform-cpaas-programmable-communications-conversation-api
+  relationship_description: The Conversation API Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0081-provides
+  source_id: dea:information-system-component-communications-platform-cpaas-programmable-communications
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-communications-platform-cpaas-programmable-communications-messaging-insights-analytics
+  relationship_description: The Messaging Insights & Analytics Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-communications-platform-cpaas-programmable-communications-messaging-insights-analytics; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0082-exposes
+  source_id: dea:information-system-service-communications-platform-cpaas-programmable-communications-messaging-insights-analytics
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-communications-platform-cpaas-programmable-communications-messaging-insights-analytics
+  relationship_description: The Messaging Insights & Analytics Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0083-provides
+  source_id: dea:information-system-component-communications-platform-cpaas-programmable-communications
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-communications-platform-cpaas-programmable-communications-messaging-webhook
+  relationship_description: The Messaging Webhook Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-communications-platform-cpaas-programmable-communications-messaging-webhook; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0084-exposes
+  source_id: dea:information-system-service-communications-platform-cpaas-programmable-communications-messaging-webhook
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-communications-platform-cpaas-programmable-communications-messaging-webhook
+  relationship_description: The Messaging Webhook Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0085-provides
+  source_id: dea:information-system-component-communications-platform-cpaas-programmable-communications
+  relationship_type: dea:provides
+  target_id: dea:information-system-service-communications-platform-cpaas-programmable-communications-otp-verification
+  relationship_description: The OTP Verification Service service is provided by its sub-system component.
+  provenance: CR-IS-CAT-03E population (2026-11-11); provider resolves against the vendored ISC snapshot.
+  validity_status: active
+  effective_version: '1.0'
+  evidence: CR-IS-CAT-03D record dea:information-system-service-communications-platform-cpaas-programmable-communications-otp-verification; ISC catalogue at pinned commit 1530a667a9ea
+  metadata: {}
+- id: rel:iss-0086-exposes
+  source_id: dea:information-system-service-communications-platform-cpaas-programmable-communications-otp-verification
+  relationship_type: dea:exposes
+  target_id: dea:integration-interface-communications-platform-cpaas-programmable-communications-otp-verification
+  relationship_description: The OTP Verification Service service is exposed via its integration interface.
+  provenance: CR-IS-CAT-03E population (2026-11-11); target is forward-declared to dea-catalog-integration-interfaces under CR-IS-CAT-04B.
+  validity_status: planned
+  effective_version: '1.0'
+  evidence: forward declaration in docs/is-semantic-architecture/forward-declarations.yaml
+  metadata: {}
+- id: rel:iss-0087-provides
+  source_id: dea:information-system-component-communications-platform-cpaas-programmable-communications
+  relationship_type: dea:provides

@@ -23,7 +23,7 @@ jobs:
           set -euo pipefail
           python3 scripts/check_pointer.py
 
-      - name: "Step 3: Schema projection present and valid"
+      - name: "Step 3: Schema projection and record conformance"
         run: |
           set -euo pipefail
           python3 scripts/check_schema_projection.py
@@ -37,3 +37,18 @@ jobs:
         run: |
           set -euo pipefail
           python3 scripts/check_record_posture.py
+
+      - name: "Step 6: Record taxonomy (CR-IS-CAT-03B)"
+        run: |
+          set -euo pipefail
+          python3 scripts/check_record_taxonomy.py
+
+      - name: "Step 7: Record evidence (CR-IS-CAT-03C)"
+        run: |
+          set -euo pipefail
+          python3 scripts/check_record_evidence.py
+
+      - name: "Step 8: Reference integrity (CR-IS-CAT-03E)"
+        run: |
+          set -euo pipefail
+          python3 scripts/check_reference_integrity.py

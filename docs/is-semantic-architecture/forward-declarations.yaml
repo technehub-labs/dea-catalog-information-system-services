@@ -1,0 +1,983 @@
+schema: dea.iss.forward-declarations.v1
+declared_by: CR-IS-CAT-03E
+policy: a reference whose target does not yet exist is permitted only when the target
+  catalogue and the owning change request are both named (FOUNDATIONS D5). The target
+  repository dea-catalog-integration-interfaces was re-verified as empty at slice time
+  (2026-11-11); its population lands under CR-IS-CAT-04A/04B in the same programme wave.
+forward_declarations:
+  - id: dea:integration-interface-api-gateway-public
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-card-payment-network-authorization-clearing-settlement-bin-account-range-resolution
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-card-payment-network-authorization-clearing-settlement-chargeback-representment
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-card-payment-network-authorization-clearing-settlement-clearing-file-exchange
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-card-payment-network-authorization-clearing-settlement-dispute-case-management
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-card-payment-network-authorization-clearing-settlement-interchange-scheme-fee-calculation
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-card-payment-network-authorization-clearing-settlement-network-settlement-obligation
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-card-payment-network-authorization-clearing-settlement-settlement-reconciliation
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-card-payment-network-authorization-clearing-settlement-transaction-authorization
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-claims-management-system-claims-intake-adjudication-claim-adjudication-decision
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-claims-management-system-claims-intake-adjudication-claim-assignment-routing
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-claims-management-system-claims-intake-adjudication-claim-closure-coding
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-claims-management-system-claims-intake-adjudication-claim-exposure-coverage-evaluation
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-claims-management-system-claims-intake-adjudication-claim-fraud-detection
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-claims-management-system-claims-intake-adjudication-claim-payment-issuance
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-claims-management-system-claims-intake-adjudication-claim-reserve-estimation
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-claims-management-system-claims-intake-adjudication-first-notice-of-loss-intake
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-claims-management-system-claims-intake-adjudication-subrogation-recovery
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-bulk-data-loading
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-data-share-publication
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-elastic-query-execution
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-query-result-cache
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-role-based-access-grant
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-secure-view-masking-policy
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-table-maintenance
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-task-stream-pipeline-scheduling
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-time-travel-restore
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-cloud-data-warehouse-cloud-data-warehouse-warehouse-usage-metering
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-block-file-storage-provisioning
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-compute-instance-provisioning
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-load-balancing-traffic-routing
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-managed-database-backup-restore
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-managed-dns-resolution
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-managed-message-queue
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-monitoring-alarm-evaluation
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-network-security-group-enforcement
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-object-storage-lifecycle
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-cloud-infrastructure-platform-compute-storage-networking-services-serverless-function-invocation
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-communications-platform-cpaas-programmable-communications-campaign-compliance-registration
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-communications-platform-cpaas-programmable-communications-conversation-api
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-communications-platform-cpaas-programmable-communications-messaging-insights-analytics
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-communications-platform-cpaas-programmable-communications-messaging-webhook
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-communications-platform-cpaas-programmable-communications-otp-verification
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-communications-platform-cpaas-programmable-communications-phone-number-provisioning
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-communications-platform-cpaas-programmable-communications-programmable-sms
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-communications-platform-cpaas-programmable-communications-programmable-voice
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-admission-control
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-cluster-autoscaling
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-cluster-state-persistence
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-configuration-secret-injection
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-container-image-registry
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-controller-high-availability
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-ingress-gateway
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-network-policy-enforcement
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-persistent-volume-binding
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-rolling-deployment
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-service-discovery-routing
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-container-orchestration-platform-cluster-control-plane-workloads-workload-scheduling
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-continuous-integration-continuous-delivery-ci-cd-platform-ci-cd-workflows-build-secrets-management
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-continuous-integration-continuous-delivery-ci-cd-platform-ci-cd-workflows-deployment-automation
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-continuous-integration-continuous-delivery-ci-cd-platform-ci-cd-workflows-environment-approval-gate
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-continuous-integration-continuous-delivery-ci-cd-platform-ci-cd-workflows-failed-workflow-diagnostics
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-continuous-integration-continuous-delivery-ci-cd-platform-ci-cd-workflows-job-token-issuance
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-continuous-integration-continuous-delivery-ci-cd-platform-ci-cd-workflows-matrix-build-execution
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-continuous-integration-continuous-delivery-ci-cd-platform-ci-cd-workflows-repository-checkout-cache
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-continuous-integration-continuous-delivery-ci-cd-platform-ci-cd-workflows-self-hosted-runner-registration
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-continuous-integration-continuous-delivery-ci-cd-platform-ci-cd-workflows-workflow-artifact
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-continuous-integration-continuous-delivery-ci-cd-platform-ci-cd-workflows-workflow-trigger
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-customer-deposit-accounts-account-opening
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-customer-deposit-accounts-account-statement-generation
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-customer-deposit-accounts-balance-interest-enquiry
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-customer-deposit-accounts-cheque-clearing
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-customer-deposit-accounts-dormancy-escheatment
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-customer-deposit-accounts-end-of-day-batch-processing
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-customer-deposit-accounts-general-ledger-interface
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-customer-deposit-accounts-interest-accrual-capitalization
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-customer-deposit-accounts-regulatory-reporting-extraction
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-customer-deposit-accounts-standing-order-scheduled-transfer
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-customer-deposit-accounts-teller-cash-management
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-customer-deposit-accounts-transaction-posting
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-deposits-payments-account-charges-fees
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-deposits-payments-account-mandate-signatory
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-deposits-payments-bulk-payment-file
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-deposits-payments-certificate-of-deposit
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-deposits-payments-deposit-account-origination
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-deposits-payments-deposit-interest-rate-administration
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-deposits-payments-deposit-regulatory-reporting
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-deposits-payments-payment-order-fund-transfer
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-lending-arrears-collection
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-lending-collateral-registration-valuation
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-lending-credit-limit-exposure-checking
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-lending-early-settlement-restructuring
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-lending-external-credit-scoring-integration
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-lending-loan-accrual-recalculation
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-lending-loan-disbursement
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-lending-loan-origination-decision
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-lending-loan-repayment-schedule
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-payments-financial-messaging-interbank-credit-transfer
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-payments-financial-messaging-intraday-liquidity-monitoring
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-payments-financial-messaging-iso-20022-payment-origination
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-payments-financial-messaging-kyc-screening
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-payments-financial-messaging-nostro-vostro-reconciliation
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-payments-financial-messaging-payment-sanctions-screening
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-payments-financial-messaging-secure-financial-message-routing
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-payments-financial-messaging-sepa-ach-payment-file
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-trade-finance-treasury-bill-collection
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-trade-finance-treasury-counterparty-limit-enforcement
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-trade-finance-treasury-fx-deal-capture
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-trade-finance-treasury-fx-netting-settlement
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-trade-finance-treasury-guarantee-avalisation
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-trade-finance-treasury-letter-of-credit-issuance
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-trade-finance-treasury-money-market-placement
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-trade-finance-treasury-treasury-end-of-period-batch
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-core-banking-system-trade-finance-treasury-treasury-position-risk-reporting
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-customer-service-management-case-escalation
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-customer-service-management-case-intake-routing
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-customer-service-management-case-resolution-automation
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-customer-service-management-entitlement-contract-validation
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-customer-service-management-field-service-dispatch
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-customer-service-management-knowledge-base
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-customer-service-management-omni-channel-work-routing
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-customer-service-management-post-case-survey
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-customer-service-management-self-service-deflection
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-customer-service-management-service-console-customer-view
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-customer-service-marketing-asset-service-agreement-billing
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-customer-service-marketing-cross-application-record-sync
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-customer-service-marketing-customer-case-triage
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-customer-service-marketing-customer-profile-consolidation
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-customer-service-marketing-engagement-analytics
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-customer-service-marketing-entitlement-validation
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-customer-service-marketing-journey-orchestration
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-customer-service-marketing-knowledge-suggestion
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-customer-service-marketing-lead-scoring
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-customer-service-marketing-order-to-invoice-integration
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-customer-service-marketing-survey-feedback
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-customer-service-marketing-work-routing-dispatch
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-platform-automation-services-audit-trail-monitoring
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-platform-automation-services-data-export-backup
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-platform-automation-services-integration-subscriber
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-platform-automation-services-platform-api-management
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-platform-automation-services-platform-event-publishing
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-platform-automation-services-process-automation
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-platform-automation-services-profile-permission-enforcement
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-platform-automation-services-sandbox-refresh-deployment
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-platform-automation-services-user-provisioning-sso
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-platform-automation-services-virtual-data-federation
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-sales-force-automation-account-contact-hierarchy
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-sales-force-automation-bulk-data-import-export
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-sales-force-automation-campaign-response-attribution
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-sales-force-automation-duplicate-detection-merge
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-sales-force-automation-lead-capture-routing
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-sales-force-automation-lead-qualification-conversion
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-sales-force-automation-opportunity-assignment
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-sales-force-automation-pipeline-forecasting
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-sales-force-automation-product-price-book
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-sales-force-automation-quote-generation
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-relationship-management-crm-system-sales-force-automation-sales-analytics
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-service-ticketing-platform-customer-service-management-agent-workspace
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-service-ticketing-platform-customer-service-management-csat-survey
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-service-ticketing-platform-customer-service-management-knowledge-base
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-service-ticketing-platform-customer-service-management-macro-application
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-service-ticketing-platform-customer-service-management-organization-membership
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue
+      population (CR-IS-CAT-04B); the ISS record asserts the contract, the IF
+      record asserts the exposure means.
+  - id: dea:integration-interface-customer-service-ticketing-platform-customer-service-management-sla-policy-enforcement
+    target_repo: dea-catalog-integration-interfaces
+    owning_cr: CR-IS-CAT-04B
+    rationale: the integration interface record lands via the IF catalogue

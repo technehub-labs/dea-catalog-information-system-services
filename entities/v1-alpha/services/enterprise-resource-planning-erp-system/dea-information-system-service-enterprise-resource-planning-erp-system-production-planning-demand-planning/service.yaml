@@ -1,0 +1,55 @@
+id: dea:information-system-service-enterprise-resource-planning-erp-system-production-planning-demand-planning
+type: InformationSystemService
+name: Demand Planning Service
+description: 'Vendor-neutral service record of the Production Planning sub-system of the Enterprise
+  Resource Planning (ERP) System generic system class (Enterprise Applications sector). Demand Planning
+  Service is offered as a service contract; the substitutability test (CR-03A 4.1) passes: materially
+  different vendor implementations can fulfil the same contract, so the record is filed here and not
+  as a component. Provider: the Production Planning sub-system component of the Enterprise Resource
+  Planning (ERP) System (see provided_by). Vendor corroboration is evidence only; at least 3 distinct
+  vendor systems are cited and no vendor product is canonical (per G-12).'
+version: 1.0.0
+lifecycle_status: active
+service_kind: analytics
+consumer_class: internal-analyst
+interaction_pattern: batch
+external_references:
+- system: SAP S/4HANA
+  identifier: S4-PP-009
+- system: Oracle Fusion Cloud Applications (Financials, HCM, SCM)
+  identifier: OFU-PP-009
+- system: Microsoft Dynamics 365 (Finance & Operations, Customer Engagement)
+  identifier: D3-PP-009
+tags:
+- service-kind:analytics
+- consumer-class:internal-analyst
+- interaction-pattern:batch
+- sector:enterprise-applications
+- system-class:enterprise-resource-planning-erp-system
+service_contract:
+  offering: 'Aggregated service contract of the Production Planning sub-system of a Enterprise Resource
+    Planning (ERP) System: Execute demand planning on planned independent requirements.'
+  consumers:
+  - Internal analysts across the Enterprise Applications organization
+  contract_status: published
+provided_by:
+- dea:information-system-component-enterprise-resource-planning-erp-system-production-planning
+exposed_via:
+- dea:integration-interface-enterprise-resource-planning-erp-system-production-planning-demand-planning
+governance:
+  functional_owner: IS Semantic Architecture programme
+  steward: IS Semantic Architecture programme
+  approval_status: proposed
+  review_date: '2027-11-10'
+  source_and_evidence: 'Metamodel clause: dea-metamodel schemas/entities/information-system-service.json
+    (InformationSystemService, L5-integration). Admitting CR: CR-IS-CAT-03D (population, deterministic
+    per G-10). Vendor evidence (3 distinct vendor systems, evidence only per G-12): SAP S/4HANA (identifier
+    S4-PP-009); Oracle Fusion Cloud Applications (Financials, HCM, SCM) (identifier OFU-PP-009); Microsoft
+    Dynamics 365 (Finance & Operations, Customer Engagement) (identifier D3-PP-009).'
+metadata:
+  cr: CR-IS-CAT-03D
+  created_by: Emmanuel A. Otchere
+  created_date: '2026-11-11'
+  notes: Derived from the CR-IS-CAT-01C-P4 corroborated function population (594 functions) by deterministic
+    service-contract clustering (G-10). Cross-catalogue exposure is declared forward to dea-catalog-integration-interfaces
+    under CR-IS-CAT-03E.

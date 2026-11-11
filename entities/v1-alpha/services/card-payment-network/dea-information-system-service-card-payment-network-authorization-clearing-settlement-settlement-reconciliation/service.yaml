@@ -1,0 +1,54 @@
+id: dea:information-system-service-card-payment-network-authorization-clearing-settlement-settlement-reconciliation
+type: InformationSystemService
+name: Settlement Reconciliation Service
+description: 'Vendor-neutral service record of the Authorization, Clearing & Settlement sub-system of
+  the Card Payment Network generic system class (Financial Services sector). Settlement Reconciliation
+  Service is offered as a service contract; the substitutability test (CR-03A 4.1) passes: materially
+  different vendor implementations can fulfil the same contract, so the record is filed here and not
+  as a component. Provider: the Authorization, Clearing & Settlement sub-system component of the Card
+  Payment Network (see provided_by). Vendor corroboration is evidence only; at least 3 distinct vendor
+  systems are cited and no vendor product is canonical (per G-12).'
+version: 1.0.0
+lifecycle_status: active
+service_kind: analytics
+consumer_class: internal-analyst
+interaction_pattern: batch
+external_references:
+- system: Card Networks (VisaNet / Mastercard)
+  identifier: CN-ACS-007
+- system: Visa
+  identifier: VSA-ACS-007
+- system: Mastercard
+  identifier: MCD-ACS-007
+tags:
+- service-kind:analytics
+- consumer-class:internal-analyst
+- interaction-pattern:batch
+- sector:financial-services
+- system-class:card-payment-network
+service_contract:
+  offering: 'Aggregated service contract of the Authorization, Clearing & Settlement sub-system of a
+    Card Payment Network: Reconcile settlement obligations to acquirers.'
+  consumers:
+  - Internal analysts across the Financial Services organization
+  contract_status: published
+provided_by:
+- dea:information-system-component-card-payment-network-authorization-clearing-settlement
+exposed_via:
+- dea:integration-interface-card-payment-network-authorization-clearing-settlement-settlement-reconciliation
+governance:
+  functional_owner: IS Semantic Architecture programme
+  steward: IS Semantic Architecture programme
+  approval_status: proposed
+  review_date: '2027-11-10'
+  source_and_evidence: 'Metamodel clause: dea-metamodel schemas/entities/information-system-service.json
+    (InformationSystemService, L5-integration). Admitting CR: CR-IS-CAT-03D (population, deterministic
+    per G-10). Vendor evidence (3 distinct vendor systems, evidence only per G-12): Card Networks (VisaNet
+    / Mastercard) (identifier CN-ACS-007); Visa (identifier VSA-ACS-007); Mastercard (identifier MCD-ACS-007).'
+metadata:
+  cr: CR-IS-CAT-03D
+  created_by: Emmanuel A. Otchere
+  created_date: '2026-11-11'
+  notes: Derived from the CR-IS-CAT-01C-P4 corroborated function population (594 functions) by deterministic
+    service-contract clustering (G-10). Cross-catalogue exposure is declared forward to dea-catalog-integration-interfaces
+    under CR-IS-CAT-03E.

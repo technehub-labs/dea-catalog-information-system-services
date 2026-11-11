@@ -1,0 +1,12 @@
+system_class: claims-management-system
+record_count: 9
+service_ids:
+- dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-adjudication-decision
+- dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-assignment-routing
+- dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-closure-coding
+- dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-exposure-coverage-evaluation
+- dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-fraud-detection
+- dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-payment-issuance
+- dea:information-system-service-claims-management-system-claims-intake-adjudication-claim-reserve-estimation
+- dea:information-system-service-claims-management-system-claims-intake-adjudication-first-notice-of-loss-intake
+- dea:information-system-service-claims-management-system-claims-intake-adjudication-subrogation-recovery

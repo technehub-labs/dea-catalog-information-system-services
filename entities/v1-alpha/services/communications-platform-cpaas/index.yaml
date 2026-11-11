@@ -1,0 +1,11 @@
+system_class: communications-platform-cpaas
+record_count: 8
+service_ids:
+- dea:information-system-service-communications-platform-cpaas-programmable-communications-campaign-compliance-registration
+- dea:information-system-service-communications-platform-cpaas-programmable-communications-conversation-api
+- dea:information-system-service-communications-platform-cpaas-programmable-communications-messaging-insights-analytics
+- dea:information-system-service-communications-platform-cpaas-programmable-communications-messaging-webhook
+- dea:information-system-service-communications-platform-cpaas-programmable-communications-otp-verification
+- dea:information-system-service-communications-platform-cpaas-programmable-communications-phone-number-provisioning
+- dea:information-system-service-communications-platform-cpaas-programmable-communications-programmable-sms
+- dea:information-system-service-communications-platform-cpaas-programmable-communications-programmable-voice

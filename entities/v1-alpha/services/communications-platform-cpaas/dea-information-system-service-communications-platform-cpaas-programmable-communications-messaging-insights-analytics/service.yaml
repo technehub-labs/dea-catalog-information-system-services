@@ -1,0 +1,55 @@
+id: dea:information-system-service-communications-platform-cpaas-programmable-communications-messaging-insights-analytics
+type: InformationSystemService
+name: Messaging Insights & Analytics Service
+description: 'Vendor-neutral service record of the Programmable Communications sub-system of the Communications
+  Platform (CPaaS) generic system class (Customer Communications sector). Messaging Insights & Analytics
+  Service is offered as a service contract; the substitutability test (CR-03A 4.1) passes: materially
+  different vendor implementations can fulfil the same contract, so the record is filed here and not
+  as a component. Provider: the Programmable Communications sub-system component of the Communications
+  Platform (CPaaS) (see provided_by). Vendor corroboration is evidence only; at least 3 distinct vendor
+  systems are cited and no vendor product is canonical (per G-12).'
+version: 1.0.0
+lifecycle_status: active
+service_kind: analytics
+consumer_class: internal-analyst
+interaction_pattern: batch
+external_references:
+- system: Twilio
+  identifier: TW-PGC-003
+- system: Vonage Communications APIs
+  identifier: VNG-PGC-003
+- system: Sinch Communications
+  identifier: SNC-PGC-003
+tags:
+- service-kind:analytics
+- consumer-class:internal-analyst
+- interaction-pattern:batch
+- sector:customer-communications
+- system-class:communications-platform-cpaas
+service_contract:
+  offering: 'Service contract of the Programmable Communications sub-system of a Communications Platform
+    (CPaaS): Reports on message delivery and engagement quality.'
+  consumers:
+  - Internal analysts across the Customer Communications organization
+  contract_status: published
+provided_by:
+- dea:information-system-component-communications-platform-cpaas-programmable-communications
+exposed_via:
+- dea:integration-interface-communications-platform-cpaas-programmable-communications-messaging-insights-analytics
+governance:
+  functional_owner: IS Semantic Architecture programme
+  steward: IS Semantic Architecture programme
+  approval_status: proposed
+  review_date: '2027-11-10'
+  source_and_evidence: 'Metamodel clause: dea-metamodel schemas/entities/information-system-service.json
+    (InformationSystemService, L5-integration). Admitting CR: CR-IS-CAT-03D (population, deterministic
+    per G-10). Vendor evidence (3 distinct vendor systems, evidence only per G-12): Twilio (identifier
+    TW-PGC-003); Vonage Communications APIs (identifier VNG-PGC-003); Sinch Communications (identifier
+    SNC-PGC-003).'
+metadata:
+  cr: CR-IS-CAT-03D
+  created_by: Emmanuel A. Otchere
+  created_date: '2026-11-11'
+  notes: Derived from the CR-IS-CAT-01C-P4 corroborated function population (594 functions) by deterministic
+    service-contract clustering (G-10). Cross-catalogue exposure is declared forward to dea-catalog-integration-interfaces
+    under CR-IS-CAT-03E.

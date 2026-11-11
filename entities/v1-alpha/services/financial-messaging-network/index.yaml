@@ -1,0 +1,15 @@
+system_class: financial-messaging-network
+record_count: 12
+service_ids:
+- dea:information-system-service-financial-messaging-network-messaging-connectivity-bic-directory
+- dea:information-system-service-financial-messaging-network-messaging-connectivity-duplicate-message-detection
+- dea:information-system-service-financial-messaging-network-messaging-connectivity-iso-20022-message-processing
+- dea:information-system-service-financial-messaging-network-messaging-connectivity-message-acknowledgement
+- dea:information-system-service-financial-messaging-network-messaging-connectivity-message-traffic-reporting
+- dea:information-system-service-financial-messaging-network-messaging-connectivity-messaging-relationship-authorization
+- dea:information-system-service-financial-messaging-network-messaging-connectivity-mt-customer-credit-transfer
+- dea:information-system-service-financial-messaging-network-messaging-connectivity-network-governance-reporting
+- dea:information-system-service-financial-messaging-network-messaging-connectivity-sanctions-screening
+- dea:information-system-service-financial-messaging-network-messaging-connectivity-standards-level-message-validation
+- dea:information-system-service-financial-messaging-network-messaging-connectivity-store-and-forward-message
+- dea:information-system-service-financial-messaging-network-messaging-connectivity-transaction-monitoring-exception

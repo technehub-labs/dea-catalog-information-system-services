@@ -532,3 +532,309 @@ snapshots:
       source_file: entities/v1-alpha/components/employee-experience/components/information-system-component-human-capital-management-hcm-system-human-capital-management-performance-component/component.yaml
     dea:information-system-component-human-capital-management-hcm-system-human-capital-management-position-component:
       name: "Position Component (Human Capital Management, Human Capital Management (HCM) System)"
+      source_file: entities/v1-alpha/components/employee-experience/components/information-system-component-human-capital-management-hcm-system-human-capital-management-position-component/component.yaml
+    dea:information-system-component-human-capital-management-hcm-system-human-capital-management-skills-component:
+      name: "Skills Component (Human Capital Management, Human Capital Management (HCM) System)"
+      source_file: entities/v1-alpha/components/employee-experience/components/information-system-component-human-capital-management-hcm-system-human-capital-management-skills-component/component.yaml
+    dea:information-system-component-human-capital-management-hcm-system-human-capital-management-worker-component:
+      name: "Worker Component (Human Capital Management, Human Capital Management (HCM) System)"
+      source_file: entities/v1-alpha/components/employee-experience/components/information-system-component-human-capital-management-hcm-system-human-capital-management-worker-component/component.yaml
+    dea:information-system-component-identity-and-access-management-iam-platform:
+      name: "Identity and Access Management (IAM) Platform"
+      source_file: entities/v1-alpha/components/security/components/information-system-component-identity-and-access-management-iam-platform/component.yaml
+    dea:information-system-component-identity-and-access-management-iam-platform-identity-access-services:
+      name: "Identity & Access Services (Identity and Access Management (IAM) Platform)"
+      source_file: entities/v1-alpha/components/security/components/information-system-component-identity-and-access-management-iam-platform-identity-access-services/component.yaml
+    dea:information-system-component-identity-and-access-management-iam-platform-identity-access-services-conditional-access-component:
+      name: "Conditional Access Component (Identity & Access Services, Identity and Access Management (IAM) Platform)"
+      source_file: entities/v1-alpha/components/security/components/information-system-component-identity-and-access-management-iam-platform-identity-access-services-conditional-access-component/component.yaml
+    dea:information-system-component-identity-and-access-management-iam-platform-identity-access-services-mfa-component:
+      name: "MFA Component (Identity & Access Services, Identity and Access Management (IAM) Platform)"
+      source_file: entities/v1-alpha/components/security/components/information-system-component-identity-and-access-management-iam-platform-identity-access-services-mfa-component/component.yaml
+    dea:information-system-component-identity-and-access-management-iam-platform-identity-access-services-pim-component:
+      name: "PIM Component (Identity & Access Services, Identity and Access Management (IAM) Platform)"
+      source_file: entities/v1-alpha/components/security/components/information-system-component-identity-and-access-management-iam-platform-identity-access-services-pim-component/component.yaml
+    dea:information-system-component-identity-and-access-management-iam-platform-identity-access-services-realm-component:
+      name: "Realm Component (Identity & Access Services, Identity and Access Management (IAM) Platform)"
+      source_file: entities/v1-alpha/components/security/components/information-system-component-identity-and-access-management-iam-platform-identity-access-services-realm-component/component.yaml
+    dea:information-system-component-identity-and-access-management-iam-platform-identity-access-services-saml-component:
+      name: "SAML Component (Identity & Access Services, Identity and Access Management (IAM) Platform)"
+      source_file: entities/v1-alpha/components/security/components/information-system-component-identity-and-access-management-iam-platform-identity-access-services-saml-component/component.yaml
+    dea:information-system-component-identity-and-access-management-iam-platform-identity-access-services-sync-component:
+      name: "Sync Component (Identity & Access Services, Identity and Access Management (IAM) Platform)"
+      source_file: entities/v1-alpha/components/security/components/information-system-component-identity-and-access-management-iam-platform-identity-access-services-sync-component/component.yaml
+    dea:information-system-component-identity-broker:
+      name: "Identity Broker"
+      source_file: entities/v1-alpha/components/security/components/information-system-component-identity-broker/component.yaml
+    dea:information-system-component-identity-broker-session-store:
+      name: "Identity Broker Session Store"
+      source_file: entities/v1-alpha/components/security/components/identity-broker-session-store/component.yaml
+    dea:information-system-component-identity-broker-token-issuer:
+      name: "Identity Broker Token Issuer"
+      source_file: entities/v1-alpha/components/security/components/identity-broker-token-issuer/component.yaml
+    dea:information-system-component-infrastructure-as-code-iac-platform:
+      name: "Infrastructure as Code (IaC) Platform"
+      source_file: entities/v1-alpha/components/development-platform/components/information-system-component-infrastructure-as-code-iac-platform/component.yaml
+    dea:information-system-component-infrastructure-as-code-iac-platform-infrastructure-as-code:
+      name: "Infrastructure as Code (Infrastructure as Code (IaC) Platform)"
+      source_file: entities/v1-alpha/components/development-platform/components/information-system-component-infrastructure-as-code-iac-platform-infrastructure-as-code/component.yaml
+    dea:information-system-component-infrastructure-as-code-iac-platform-infrastructure-as-code-plan-component:
+      name: "Plan Component (Infrastructure as Code, Infrastructure as Code (IaC) Platform)"
+      source_file: entities/v1-alpha/components/development-platform/components/information-system-component-infrastructure-as-code-iac-platform-infrastructure-as-code-plan-component/component.yaml
+    dea:information-system-component-iot-device-management-platform:
+      name: "IoT Device Management Platform"
+      source_file: entities/v1-alpha/components/integration/components/information-system-component-iot-device-management-platform/component.yaml
+    dea:information-system-component-iot-device-management-platform-device-connectivity:
+      name: "Device Connectivity (IoT Device Management Platform)"
+      source_file: entities/v1-alpha/components/integration/components/information-system-component-iot-device-management-platform-device-connectivity/component.yaml
+    dea:information-system-component-iot-device-management-platform-device-connectivity-device-twin-component:
+      name: "Device Twin Component (Device Connectivity, IoT Device Management Platform)"
+      source_file: entities/v1-alpha/components/integration/components/information-system-component-iot-device-management-platform-device-connectivity-device-twin-component/component.yaml
+    dea:information-system-component-iot-device-management-platform-device-connectivity-rules-engine-component:
+      name: "Rules Engine Component (Device Connectivity, IoT Device Management Platform)"
+      source_file: entities/v1-alpha/components/integration/components/information-system-component-iot-device-management-platform-device-connectivity-rules-engine-component/component.yaml
+    dea:information-system-component-issue-tracking-platform:
+      name: "Issue Tracking Platform"
+      source_file: entities/v1-alpha/components/development-platform/components/information-system-component-issue-tracking-platform/component.yaml
+    dea:information-system-component-issue-tracking-platform-issue-tracking-planning:
+      name: "Issue Tracking & Planning (Issue Tracking Platform)"
+      source_file: entities/v1-alpha/components/development-platform/components/information-system-component-issue-tracking-platform-issue-tracking-planning/component.yaml
+    dea:information-system-component-issue-tracking-platform-issue-tracking-planning-field-scheme-component:
+      name: "Field Scheme Component (Issue Tracking & Planning, Issue Tracking Platform)"
+      source_file: entities/v1-alpha/components/development-platform/components/information-system-component-issue-tracking-platform-issue-tracking-planning-field-scheme-component/component.yaml
+    dea:information-system-component-it-service-management-itsm-platform:
+      name: "IT Service Management (ITSM) Platform"
+      source_file: entities/v1-alpha/components/employee-experience/components/information-system-component-it-service-management-itsm-platform/component.yaml
+    dea:information-system-component-it-service-management-itsm-platform-it-service-management:
+      name: "IT Service Management (IT Service Management (ITSM) Platform)"
+      source_file: entities/v1-alpha/components/employee-experience/components/information-system-component-it-service-management-itsm-platform-it-service-management/component.yaml
+    dea:information-system-component-it-service-management-itsm-platform-it-service-management-approval-component:
+      name: "Approval Component (IT Service Management, IT Service Management (ITSM) Platform)"
+      source_file: entities/v1-alpha/components/employee-experience/components/information-system-component-it-service-management-itsm-platform-it-service-management-approval-component/component.yaml
+    dea:information-system-component-it-service-management-itsm-platform-it-service-management-cmdb-component:
+      name: "CMDB Component (IT Service Management, IT Service Management (ITSM) Platform)"
+      source_file: entities/v1-alpha/components/employee-experience/components/information-system-component-it-service-management-itsm-platform-it-service-management-cmdb-component/component.yaml
+    dea:information-system-component-it-service-management-itsm-platform-it-service-management-knowledge-component:
+      name: "Knowledge Component (IT Service Management, IT Service Management (ITSM) Platform)"
+      source_file: entities/v1-alpha/components/employee-experience/components/information-system-component-it-service-management-itsm-platform-it-service-management-knowledge-component/component.yaml
+    dea:information-system-component-it-service-management-itsm-platform-it-service-management-sla-component:
+      name: "SLA Component (IT Service Management, IT Service Management (ITSM) Platform)"
+      source_file: entities/v1-alpha/components/employee-experience/components/information-system-component-it-service-management-itsm-platform-it-service-management-sla-component/component.yaml
+    dea:information-system-component-log-aggregator:
+      name: "Log Aggregator"
+      source_file: entities/v1-alpha/components/observability/components/log-aggregator/component.yaml
+    dea:information-system-component-manufacturing-execution-system-mes:
+      name: "Manufacturing Execution System (MES)"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-manufacturing-execution-system-mes/component.yaml
+    dea:information-system-component-manufacturing-execution-system-mes-manufacturing-execution:
+      name: "Manufacturing Execution (Manufacturing Execution System (MES))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-manufacturing-execution-system-mes-manufacturing-execution/component.yaml
+    dea:information-system-component-manufacturing-execution-system-mes-manufacturing-execution-dispatch-component:
+      name: "Dispatch Component (Manufacturing Execution, Manufacturing Execution System (MES))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-manufacturing-execution-system-mes-manufacturing-execution-dispatch-component/component.yaml
+    dea:information-system-component-metrics-collector:
+      name: "Metrics Collector"
+      source_file: entities/v1-alpha/components/observability/components/metrics-collector/component.yaml
+    dea:information-system-component-mobile-core-network-epc-5gc:
+      name: "Mobile Core Network (EPC/5GC)"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-mobile-core-network-epc-5gc/component.yaml
+    dea:information-system-component-mobile-core-network-epc-5gc-charging-function:
+      name: "Charging Function (Mobile Core Network (EPC/5GC))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-mobile-core-network-epc-5gc-charging-function/component.yaml
+    dea:information-system-component-mobile-core-network-epc-5gc-charging-function-online-charging-component:
+      name: "Online Charging Component (Charging Function, Mobile Core Network (EPC/5GC))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-mobile-core-network-epc-5gc-charging-function-online-charging-component/component.yaml
+    dea:information-system-component-mobile-core-network-epc-5gc-mobility-session-management:
+      name: "Mobility & Session Management (Mobile Core Network (EPC/5GC))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-mobile-core-network-epc-5gc-mobility-session-management/component.yaml
+    dea:information-system-component-mobile-core-network-epc-5gc-mobility-session-management-access-mobility-component:
+      name: "Access & Mobility Component (Mobility & Session Management, Mobile Core Network (EPC/5GC))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-mobile-core-network-epc-5gc-mobility-session-management-access-mobility-component/component.yaml
+    dea:information-system-component-mobile-core-network-epc-5gc-policy-control:
+      name: "Policy Control (Mobile Core Network (EPC/5GC))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-mobile-core-network-epc-5gc-policy-control/component.yaml
+    dea:information-system-component-mobile-core-network-epc-5gc-policy-control-policy-engine-component:
+      name: "Policy Engine Component (Policy Control, Mobile Core Network (EPC/5GC))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-mobile-core-network-epc-5gc-policy-control-policy-engine-component/component.yaml
+    dea:information-system-component-mobile-core-network-epc-5gc-subscriber-data-management:
+      name: "Subscriber Data Management (Mobile Core Network (EPC/5GC))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-mobile-core-network-epc-5gc-subscriber-data-management/component.yaml
+    dea:information-system-component-mobile-core-network-epc-5gc-subscriber-data-management-subscriber-repository-component:
+      name: "Subscriber Repository Component (Subscriber Data Management, Mobile Core Network (EPC/5GC))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-mobile-core-network-epc-5gc-subscriber-data-management-subscriber-repository-component/component.yaml
+    dea:information-system-component-model-registry:
+      name: "Model Registry"
+      source_file: entities/v1-alpha/components/ai-native/components/model-registry/component.yaml
+    dea:information-system-component-model-serving-runtime:
+      name: "Model Serving Runtime"
+      source_file: entities/v1-alpha/components/ai-native/components/model-serving-runtime/component.yaml
+    dea:information-system-component-observability-platform:
+      name: "Observability Platform"
+      source_file: entities/v1-alpha/components/observability/components/information-system-component-observability-platform/component.yaml
+    dea:information-system-component-oidc-discovery:
+      name: "OIDC Discovery"
+      source_file: entities/v1-alpha/components/security/components/information-system-component-oidc-discovery/component.yaml
+    dea:information-system-component-order-fulfillment-worker:
+      name: "Order Fulfillment Worker"
+      source_file: entities/v1-alpha/components/core-operations/components/order-fulfillment-worker/component.yaml
+    dea:information-system-component-order-management-orchestrator:
+      name: "Order Management Orchestrator"
+      source_file: entities/v1-alpha/components/core-operations/components/order-management-orchestrator/component.yaml
+    dea:information-system-component-order-management-system:
+      name: "Order Management System"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-order-management-system/component.yaml
+    dea:information-system-component-partner-portal-data-exchange:
+      name: "Partner Portal Data Exchange"
+      source_file: entities/v1-alpha/components/partner-integration/components/partner-portal-data-exchange/component.yaml
+    dea:information-system-component-partner-portal-onboarding:
+      name: "Partner Portal Onboarding"
+      source_file: entities/v1-alpha/components/partner-integration/components/partner-portal-onboarding/component.yaml
+    dea:information-system-component-partner-portal-platform:
+      name: "Partner Portal Platform"
+      source_file: entities/v1-alpha/components/partner-integration/components/information-system-component-partner-portal-platform/component.yaml
+    dea:information-system-component-partner-portal-settlement:
+      name: "Partner Portal Settlement"
+      source_file: entities/v1-alpha/components/partner-integration/components/partner-portal-settlement/component.yaml
+    dea:information-system-component-payment-processing-platform:
+      name: "Payment Processing Platform"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-payment-processing-platform/component.yaml
+    dea:information-system-component-payment-processing-platform-checkout-wallet:
+      name: "Checkout & Wallet (Payment Processing Platform)"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-payment-processing-platform-checkout-wallet/component.yaml
+    dea:information-system-component-payment-processing-platform-checkout-wallet-authorization-component:
+      name: "Authorization Component (Checkout & Wallet, Payment Processing Platform)"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-payment-processing-platform-checkout-wallet-authorization-component/component.yaml
+    dea:information-system-component-payment-processing-platform-payments:
+      name: "Payments (Payment Processing Platform)"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-payment-processing-platform-payments/component.yaml
+    dea:information-system-component-payment-processing-platform-payments-tokenization-component:
+      name: "Tokenization Component (Payments, Payment Processing Platform)"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-payment-processing-platform-payments-tokenization-component/component.yaml
+    dea:information-system-component-payment-processing-platform-subscription-billing-payouts:
+      name: "Subscription Billing & Payouts (Payment Processing Platform)"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-payment-processing-platform-subscription-billing-payouts/component.yaml
+    dea:information-system-component-payment-processing-platform-subscription-billing-payouts-billing-cycle-component:
+      name: "Billing Cycle Component (Subscription Billing & Payouts, Payment Processing Platform)"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-payment-processing-platform-subscription-billing-payouts-billing-cycle-component/component.yaml
+    dea:information-system-component-policy-administration-system:
+      name: "Policy Administration System"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-policy-administration-system/component.yaml
+    dea:information-system-component-policy-administration-system-policy-origination-administration:
+      name: "Policy Origination & Administration (Policy Administration System)"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-policy-administration-system-policy-origination-administration/component.yaml
+    dea:information-system-component-policy-administration-system-policy-origination-administration-rating-component:
+      name: "Rating Component (Policy Origination & Administration, Policy Administration System)"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-policy-administration-system-policy-origination-administration-rating-component/component.yaml
+    dea:information-system-component-radio-access-network-ran:
+      name: "Radio Access Network (RAN)"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-radio-access-network-ran/component.yaml
+    dea:information-system-component-radio-access-network-ran-cell-radio-resource-management:
+      name: "Cell & Radio Resource Management (Radio Access Network (RAN))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-radio-access-network-ran-cell-radio-resource-management/component.yaml
+    dea:information-system-component-radio-access-network-ran-cell-radio-resource-management-radio-resource-component:
+      name: "Radio Resource Component (Cell & Radio Resource Management, Radio Access Network (RAN))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-radio-access-network-ran-cell-radio-resource-management-radio-resource-component/component.yaml
+    dea:information-system-component-radio-access-network-ran-handover-mobility-optimization:
+      name: "Handover & Mobility Optimization (Radio Access Network (RAN))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-radio-access-network-ran-handover-mobility-optimization/component.yaml
+    dea:information-system-component-radio-access-network-ran-handover-mobility-optimization-mobility-component:
+      name: "Mobility Component (Handover & Mobility Optimization, Radio Access Network (RAN))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-radio-access-network-ran-handover-mobility-optimization-mobility-component/component.yaml
+    dea:information-system-component-radio-access-network-ran-self-organizing-network:
+      name: "Self-Organizing Network (Radio Access Network (RAN))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-radio-access-network-ran-self-organizing-network/component.yaml
+    dea:information-system-component-radio-access-network-ran-self-organizing-network-son-engine-component:
+      name: "SON Engine Component (Self-Organizing Network, Radio Access Network (RAN))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-radio-access-network-ran-self-organizing-network-son-engine-component/component.yaml
+    dea:information-system-component-supply-chain-visibility-platform:
+      name: "Supply Chain Visibility Platform"
+      source_file: entities/v1-alpha/components/partner-integration/components/information-system-component-supply-chain-visibility-platform/component.yaml
+    dea:information-system-component-supply-chain-visibility-platform-visibility-network:
+      name: "Visibility Network (Supply Chain Visibility Platform)"
+      source_file: entities/v1-alpha/components/partner-integration/components/information-system-component-supply-chain-visibility-platform-visibility-network/component.yaml
+    dea:information-system-component-supply-chain-visibility-platform-visibility-network-milestone-component:
+      name: "Milestone Component (Visibility Network, Supply Chain Visibility Platform)"
+      source_file: entities/v1-alpha/components/partner-integration/components/information-system-component-supply-chain-visibility-platform-visibility-network-milestone-component/component.yaml
+    dea:information-system-component-telecom-business-support-system-bss:
+      name: "Telecom Business Support System (BSS)"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-telecom-business-support-system-bss/component.yaml
+    dea:information-system-component-telecom-business-support-system-bss-mediation-charging:
+      name: "Mediation & Charging (Telecom Business Support System (BSS))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-telecom-business-support-system-bss-mediation-charging/component.yaml
+    dea:information-system-component-telecom-business-support-system-bss-mediation-charging-mediation-component:
+      name: "Mediation Component (Mediation & Charging, Telecom Business Support System (BSS))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-telecom-business-support-system-bss-mediation-charging-mediation-component/component.yaml
+    dea:information-system-component-telecom-business-support-system-bss-order-management-orchestration:
+      name: "Order Management & Orchestration (Telecom Business Support System (BSS))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-telecom-business-support-system-bss-order-management-orchestration/component.yaml
+    dea:information-system-component-telecom-business-support-system-bss-order-management-orchestration-order-component:
+      name: "Order Component (Order Management & Orchestration, Telecom Business Support System (BSS))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-telecom-business-support-system-bss-order-management-orchestration-order-component/component.yaml
+    dea:information-system-component-telecom-business-support-system-bss-product-offer-catalog-management:
+      name: "Product & Offer Catalog Management (Telecom Business Support System (BSS))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-telecom-business-support-system-bss-product-offer-catalog-management/component.yaml
+    dea:information-system-component-telecom-business-support-system-bss-product-offer-catalog-management-catalog-model-component:
+      name: "Catalog Model Component (Product & Offer Catalog Management, Telecom Business Support System (BSS))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-telecom-business-support-system-bss-product-offer-catalog-management-catalog-model-component/component.yaml
+    dea:information-system-component-telecom-business-support-system-bss-rating-billing:
+      name: "Rating & Billing (Telecom Business Support System (BSS))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-telecom-business-support-system-bss-rating-billing/component.yaml
+    dea:information-system-component-telecom-business-support-system-bss-rating-billing-rating-engine-component:
+      name: "Rating Engine Component (Rating & Billing, Telecom Business Support System (BSS))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-telecom-business-support-system-bss-rating-billing-rating-engine-component/component.yaml
+    dea:information-system-component-telecom-operations-support-system-oss:
+      name: "Telecom Operations Support System (OSS)"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-telecom-operations-support-system-oss/component.yaml
+    dea:information-system-component-telecom-operations-support-system-oss-fault-management-service-assurance:
+      name: "Fault Management & Service Assurance (Telecom Operations Support System (OSS))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-telecom-operations-support-system-oss-fault-management-service-assurance/component.yaml
+    dea:information-system-component-telecom-operations-support-system-oss-fault-management-service-assurance-event-correlation-component:
+      name: "Event Correlation Component (Fault Management & Service Assurance, Telecom Operations Support System (OSS))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-telecom-operations-support-system-oss-fault-management-service-assurance-event-correlation-component/component.yaml
+    dea:information-system-component-telecom-operations-support-system-oss-network-inventory-topology:
+      name: "Network Inventory & Topology (Telecom Operations Support System (OSS))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-telecom-operations-support-system-oss-network-inventory-topology/component.yaml
+    dea:information-system-component-telecom-operations-support-system-oss-network-inventory-topology-resource-model-component:
+      name: "Resource Model Component (Network Inventory & Topology, Telecom Operations Support System (OSS))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-telecom-operations-support-system-oss-network-inventory-topology-resource-model-component/component.yaml
+    dea:information-system-component-telecom-operations-support-system-oss-performance-management:
+      name: "Performance Management (Telecom Operations Support System (OSS))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-telecom-operations-support-system-oss-performance-management/component.yaml
+    dea:information-system-component-telecom-operations-support-system-oss-performance-management-counter-component:
+      name: "Counter Component (Performance Management, Telecom Operations Support System (OSS))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-telecom-operations-support-system-oss-performance-management-counter-component/component.yaml
+    dea:information-system-component-telecom-operations-support-system-oss-service-provisioning-activation:
+      name: "Service Provisioning & Activation (Telecom Operations Support System (OSS))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-telecom-operations-support-system-oss-service-provisioning-activation/component.yaml
+    dea:information-system-component-telecom-operations-support-system-oss-service-provisioning-activation-activation-engine-component:
+      name: "Activation Engine Component (Service Provisioning & Activation, Telecom Operations Support System (OSS))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-telecom-operations-support-system-oss-service-provisioning-activation-activation-engine-component/component.yaml
+    dea:information-system-component-transportation-management-system-tms:
+      name: "Transportation Management System (TMS)"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-transportation-management-system-tms/component.yaml
+    dea:information-system-component-transportation-management-system-tms-transportation-freight:
+      name: "Transportation & Freight (Transportation Management System (TMS))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-transportation-management-system-tms-transportation-freight/component.yaml
+    dea:information-system-component-transportation-management-system-tms-transportation-freight-optimizer-component:
+      name: "Optimizer Component (Transportation & Freight, Transportation Management System (TMS))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-transportation-management-system-tms-transportation-freight-optimizer-component/component.yaml
+    dea:information-system-component-warehouse-management-system-wms:
+      name: "Warehouse Management System (WMS)"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-warehouse-management-system-wms/component.yaml
+    dea:information-system-component-warehouse-management-system-wms-warehouse-operations:
+      name: "Warehouse Operations (Warehouse Management System (WMS))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-warehouse-management-system-wms-warehouse-operations/component.yaml
+    dea:information-system-component-warehouse-management-system-wms-warehouse-operations-task-allocation-component:
+      name: "Task Allocation Component (Warehouse Operations, Warehouse Management System (WMS))"
+      source_file: entities/v1-alpha/components/core-operations/components/information-system-component-warehouse-management-system-wms-warehouse-operations-task-allocation-component/component.yaml
+    dea:information-system-component-workflow-orchestration-platform:
+      name: "Workflow Orchestration Platform"
+      source_file: entities/v1-alpha/components/data-and-analytics/components/information-system-component-workflow-orchestration-platform/component.yaml
+    dea:information-system-component-workflow-orchestration-platform-workflow-orchestration:
+      name: "Workflow Orchestration (Workflow Orchestration Platform)"
+      source_file: entities/v1-alpha/components/data-and-analytics/components/information-system-component-workflow-orchestration-platform-workflow-orchestration/component.yaml
+    dea:information-system-component-workflow-orchestration-platform-workflow-orchestration-executor-component:
+      name: "Executor Component (Workflow Orchestration, Workflow Orchestration Platform)"
+      source_file: entities/v1-alpha/components/data-and-analytics/components/information-system-component-workflow-orchestration-platform-workflow-orchestration-executor-component/component.yaml
+counts:
+  dea-catalog-application-components: 276

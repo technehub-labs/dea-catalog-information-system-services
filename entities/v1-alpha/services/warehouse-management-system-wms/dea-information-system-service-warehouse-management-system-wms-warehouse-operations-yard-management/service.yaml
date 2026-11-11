@@ -1,0 +1,55 @@
+id: dea:information-system-service-warehouse-management-system-wms-warehouse-operations-yard-management
+type: InformationSystemService
+name: Yard Management Service
+description: 'Vendor-neutral service record of the Warehouse Operations sub-system of the Warehouse
+  Management System (WMS) generic system class (Supply Chain & Manufacturing sector). Yard Management
+  Service is offered as a service contract; the substitutability test (CR-03A 4.1) passes: materially
+  different vendor implementations can fulfil the same contract, so the record is filed here and not
+  as a component. Provider: the Warehouse Operations sub-system component of the Warehouse Management
+  System (WMS) (see provided_by). Vendor corroboration is evidence only; at least 3 distinct vendor
+  systems are cited and no vendor product is canonical (per G-12).'
+version: 1.0.0
+lifecycle_status: active
+service_kind: transaction
+consumer_class: internal-application
+interaction_pattern: request-response
+external_references:
+- system: Manhattan Associates Warehouse Management System
+  identifier: MA-WHO-002
+- system: Blue Yonder WMS
+  identifier: BYJ-WHO-002
+- system: SAP S/4HANA
+  identifier: S4-WHO-002
+tags:
+- service-kind:transaction
+- consumer-class:internal-application
+- interaction-pattern:request-response
+- sector:supply-chain-manufacturing
+- system-class:warehouse-management-system-wms
+service_contract:
+  offering: 'Service contract of the Warehouse Operations sub-system of a Warehouse Management System
+    (WMS): Manages trailers and dock appointments in the yard.'
+  consumers:
+  - Internal applications of the Warehouse Management System (WMS)
+  contract_status: published
+provided_by:
+- dea:information-system-component-warehouse-management-system-wms-warehouse-operations
+exposed_via:
+- dea:integration-interface-warehouse-management-system-wms-warehouse-operations-yard-management
+governance:
+  functional_owner: IS Semantic Architecture programme
+  steward: IS Semantic Architecture programme
+  approval_status: proposed
+  review_date: '2027-11-10'
+  source_and_evidence: 'Metamodel clause: dea-metamodel schemas/entities/information-system-service.json
+    (InformationSystemService, L5-integration). Admitting CR: CR-IS-CAT-03D (population, deterministic
+    per G-10). Vendor evidence (3 distinct vendor systems, evidence only per G-12): Manhattan Associates
+    Warehouse Management System (identifier MA-WHO-002); Blue Yonder WMS (identifier BYJ-WHO-002); SAP
+    S/4HANA (identifier S4-WHO-002).'
+metadata:
+  cr: CR-IS-CAT-03D
+  created_by: Emmanuel A. Otchere
+  created_date: '2026-11-11'
+  notes: Derived from the CR-IS-CAT-01C-P4 corroborated function population (594 functions) by deterministic
+    service-contract clustering (G-10). Cross-catalogue exposure is declared forward to dea-catalog-integration-interfaces
+    under CR-IS-CAT-03E.

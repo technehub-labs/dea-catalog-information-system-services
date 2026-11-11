@@ -1,0 +1,26 @@
+system_class: telecom-operations-support-system-oss
+record_count: 23
+service_ids:
+- dea:information-system-service-telecom-operations-support-system-oss-fault-management-service-assurance-alarm-collection
+- dea:information-system-service-telecom-operations-support-system-oss-fault-management-service-assurance-alarm-correlation
+- dea:information-system-service-telecom-operations-support-system-oss-fault-management-service-assurance-customer-impact-notification
+- dea:information-system-service-telecom-operations-support-system-oss-fault-management-service-assurance-field-dispatch
+- dea:information-system-service-telecom-operations-support-system-oss-fault-management-service-assurance-sla-assurance
+- dea:information-system-service-telecom-operations-support-system-oss-fault-management-service-assurance-trouble-ticketing
+- dea:information-system-service-telecom-operations-support-system-oss-network-inventory-topology-capacity-reporting
+- dea:information-system-service-telecom-operations-support-system-oss-network-inventory-topology-impact-analysis
+- dea:information-system-service-telecom-operations-support-system-oss-network-inventory-topology-inventory-synchronization
+- dea:information-system-service-telecom-operations-support-system-oss-network-inventory-topology-resource-inventory
+- dea:information-system-service-telecom-operations-support-system-oss-network-inventory-topology-resource-lifecycle
+- dea:information-system-service-telecom-operations-support-system-oss-network-inventory-topology-topology-discovery-modeling
+- dea:information-system-service-telecom-operations-support-system-oss-performance-management-network-quality-analytics
+- dea:information-system-service-telecom-operations-support-system-oss-performance-management-performance-aggregation-reporting
+- dea:information-system-service-telecom-operations-support-system-oss-performance-management-performance-counter-collection
+- dea:information-system-service-telecom-operations-support-system-oss-performance-management-service-kpi-dashboard
+- dea:information-system-service-telecom-operations-support-system-oss-performance-management-threshold-breach-detection
+- dea:information-system-service-telecom-operations-support-system-oss-service-provisioning-activation-activation-audit
+- dea:information-system-service-telecom-operations-support-system-oss-service-provisioning-activation-bulk-provisioning
+- dea:information-system-service-telecom-operations-support-system-oss-service-provisioning-activation-network-element-configuration
+- dea:information-system-service-telecom-operations-support-system-oss-service-provisioning-activation-provisioning-rollback
+- dea:information-system-service-telecom-operations-support-system-oss-service-provisioning-activation-provisioning-validation
+- dea:information-system-service-telecom-operations-support-system-oss-service-provisioning-activation-service-activation

@@ -1,0 +1,13 @@
+system_class: policy-administration-system
+record_count: 10
+service_ids:
+- dea:information-system-service-policy-administration-system-policy-origination-administration-commission-calculation
+- dea:information-system-service-policy-administration-system-policy-origination-administration-endorsement
+- dea:information-system-service-policy-administration-system-policy-origination-administration-insured-party-validation
+- dea:information-system-service-policy-administration-system-policy-origination-administration-policy-document-generation
+- dea:information-system-service-policy-administration-system-policy-origination-administration-policy-issuance
+- dea:information-system-service-policy-administration-system-policy-origination-administration-policyholder-self-service
+- dea:information-system-service-policy-administration-system-policy-origination-administration-product-pricing-rules
+- dea:information-system-service-policy-administration-system-policy-origination-administration-quote-intake-rating
+- dea:information-system-service-policy-administration-system-policy-origination-administration-renewal
+- dea:information-system-service-policy-administration-system-policy-origination-administration-underwriting-workflow
